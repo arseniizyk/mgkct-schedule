@@ -1,0 +1,7057 @@
+{
+  "metadata": {
+    "college": "УО «Минский государственный колледж цифровых технологий» (МГКЦТ)",
+    "source_students": "https://mgkct.minskedu.gov.by/personnel/for-students/weekly-timetable",
+    "source_teachers": "https://mgkct.minskedu.gov.by/personnel/for-teachers/weekly-timetable",
+    "methodology": "https://ripo.by/ (РИПО)",
+    "extracted_at": "2026-11-02",
+    "total_groups": 35,
+    "total_curriculum_items": 428,
+    "total_rooms": 79,
+    "active_teachers": 61,
+    "inactive_teachers": 24
+  },
+  "groups": [
+    {
+      "name": "100МНЭ",
+      "code_on_site": "100",
+      "campus": "Казинца",
+      "course": 2,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "101ТП",
+      "code_on_site": "101*",
+      "campus": "Кнорина",
+      "course": 2,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 1
+    },
+    {
+      "name": "102М",
+      "code_on_site": "102",
+      "campus": "Кнорина",
+      "course": 1,
+      "specialty_code": "5-04-0713-10",
+      "specialty_name": "Техническая эксплуатация мехатронных систем электронного производства",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "103М",
+      "code_on_site": "103",
+      "campus": "Кнорина",
+      "course": 1,
+      "specialty_code": "5-04-0713-10",
+      "specialty_name": "Техническая эксплуатация мехатронных систем электронного производства",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "104РТК",
+      "code_on_site": "104",
+      "campus": "Казинца",
+      "course": 1,
+      "specialty_code": "5-04-0713-08",
+      "specialty_name": "Техническая эксплуатация технологического оборудования и средств робототехники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "105ТП",
+      "code_on_site": "105",
+      "campus": "Казинца",
+      "course": 1,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "106МНЭ",
+      "code_on_site": "106",
+      "campus": "Казинца",
+      "course": 1,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "107ТЭ",
+      "code_on_site": "107",
+      "campus": "Кнорина",
+      "course": 1,
+      "specialty_code": "5-04-0712-01",
+      "specialty_name": "Монтаж и эксплуатация электрооборудования",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "108ТЭ",
+      "code_on_site": "108",
+      "campus": "Кнорина",
+      "course": 1,
+      "specialty_code": "5-04-0712-01",
+      "specialty_name": "Монтаж и эксплуатация электрооборудования",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "109ТП",
+      "code_on_site": "109*",
+      "campus": "Кнорина",
+      "course": 1,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 4,
+      "is_opfr": true,
+      "shift": 1
+    },
+    {
+      "name": "167ТП",
+      "code_on_site": "167*",
+      "campus": "Кнорина",
+      "course": 4,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 1
+    },
+    {
+      "name": "168МНЭ",
+      "code_on_site": "168*",
+      "campus": "Кнорина",
+      "course": 4,
+      "specialty_code": "4-03-0713-06",
+      "specialty_name": "Производство изделий микро- и наноэлектроники (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 2
+    },
+    {
+      "name": "169ТП",
+      "code_on_site": "169*",
+      "campus": "Кнорина",
+      "course": 3,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 1
+    },
+    {
+      "name": "79ТЭ",
+      "code_on_site": "79",
+      "campus": "Кнорина",
+      "course": 4,
+      "specialty_code": "5-04-0712-01",
+      "specialty_name": "Монтаж и эксплуатация электрооборудования",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "80РТК",
+      "code_on_site": "80",
+      "campus": "Казинца",
+      "course": 4,
+      "specialty_code": "5-04-0713-08",
+      "specialty_name": "Техническая эксплуатация технологического оборудования и средств робототехники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "81ТП",
+      "code_on_site": "81",
+      "campus": "Казинца",
+      "course": 4,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "82ТП",
+      "code_on_site": "82",
+      "campus": "Казинца",
+      "course": 4,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "83МНЭ",
+      "code_on_site": "83",
+      "campus": "Казинца",
+      "course": 4,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "84МНЭ",
+      "code_on_site": "84",
+      "campus": "Казинца",
+      "course": 4,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "85М",
+      "code_on_site": "85",
+      "campus": "Кнорина",
+      "course": 3,
+      "specialty_code": "5-04-0713-10",
+      "specialty_name": "Техническая эксплуатация мехатронных систем электронного производства",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "86РТК",
+      "code_on_site": "86",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0713-08",
+      "specialty_name": "Техническая эксплуатация технологического оборудования и средств робототехники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "87ТП",
+      "code_on_site": "87",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "88ТП",
+      "code_on_site": "88",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "89ТП",
+      "code_on_site": "89",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "90МНЭ",
+      "code_on_site": "90",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "91МНЭ",
+      "code_on_site": "91",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 2
+    },
+    {
+      "name": "92МНЭ",
+      "code_on_site": "92",
+      "campus": "Казинца",
+      "course": 3,
+      "specialty_code": "5-04-0713-09",
+      "specialty_name": "Производство изделий микро- и наноэлектроники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "93МНЭ",
+      "code_on_site": "93*",
+      "campus": "Кнорина",
+      "course": 3,
+      "specialty_code": "4-03-0713-06",
+      "specialty_name": "Производство изделий микро- и наноэлектроники (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 2
+    },
+    {
+      "name": "94ТП",
+      "code_on_site": "94*",
+      "campus": "Кнорина",
+      "course": 3,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем (ОПФР)",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": true,
+      "shift": 1
+    },
+    {
+      "name": "95М",
+      "code_on_site": "95",
+      "campus": "Кнорина",
+      "course": 2,
+      "specialty_code": "5-04-0713-10",
+      "specialty_name": "Техническая эксплуатация мехатронных систем электронного производства",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "96РТК",
+      "code_on_site": "96",
+      "campus": "Казинца",
+      "course": 2,
+      "specialty_code": "5-04-0713-08",
+      "specialty_name": "Техническая эксплуатация технологического оборудования и средств робототехники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "97РТК",
+      "code_on_site": "97",
+      "campus": "Казинца",
+      "course": 2,
+      "specialty_code": "5-04-0713-08",
+      "specialty_name": "Техническая эксплуатация технологического оборудования и средств робототехники",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "98ТП",
+      "code_on_site": "98",
+      "campus": "Казинца",
+      "course": 2,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "99ТП",
+      "code_on_site": "99",
+      "campus": "Казинца",
+      "course": 2,
+      "specialty_code": "5-04-0612-02",
+      "specialty_name": "Разработка и сопровождение ПО информационных систем",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    },
+    {
+      "name": "9СР",
+      "code_on_site": "9",
+      "campus": "Кнорина",
+      "course": 3,
+      "specialty_code": "5-04-0322-02",
+      "specialty_name": "Документационное обеспечение управления",
+      "qualification": "ССО/ПТО",
+      "max_daily_pairs": 5,
+      "is_opfr": false,
+      "shift": 1
+    }
+  ],
+  "teachers": {
+    "active": [
+      "Преподаватель 01",
+      "Преподаватель 02",
+      "Преподаватель 03",
+      "Преподаватель 04",
+      "Преподаватель 05",
+      "Преподаватель 06",
+      "Преподаватель 07",
+      "Преподаватель 08",
+      "Преподаватель 09",
+      "Преподаватель 10",
+      "Преподаватель 11",
+      "Преподаватель 12",
+      "Преподаватель 13",
+      "Преподаватель 14",
+      "Преподаватель 15",
+      "Преподаватель 16",
+      "Преподаватель 17",
+      "Преподаватель 18",
+      "Преподаватель 19",
+      "Преподаватель 20",
+      "Преподаватель 21",
+      "Преподаватель 22",
+      "Преподаватель 23",
+      "Преподаватель 24",
+      "Преподаватель 25",
+      "Преподаватель 26",
+      "Преподаватель 27",
+      "Преподаватель 28",
+      "Преподаватель 29",
+      "Преподаватель 30",
+      "Преподаватель 31",
+      "Преподаватель 32",
+      "Преподаватель 33",
+      "Преподаватель 34",
+      "Преподаватель 35",
+      "Преподаватель 36",
+      "Преподаватель 37",
+      "Преподаватель 38",
+      "Преподаватель 39",
+      "Преподаватель 40",
+      "Преподаватель 41",
+      "Преподаватель 42",
+      "Преподаватель 43",
+      "Преподаватель 44",
+      "Преподаватель 45",
+      "Преподаватель 46",
+      "Преподаватель 47",
+      "Преподаватель 48",
+      "Преподаватель 49",
+      "Преподаватель 50",
+      "Преподаватель 51",
+      "Преподаватель 52",
+      "Преподаватель 53",
+      "Преподаватель 54",
+      "Преподаватель 55",
+      "Преподаватель 56",
+      "Преподаватель 57",
+      "Преподаватель 58",
+      "Преподаватель 59",
+      "Преподаватель 60",
+      "Преподаватель 61",
+      "Преподаватель 62",
+      "Преподаватель 63",
+      "Преподаватель 64",
+      "Преподаватель 65",
+      "Преподаватель 66",
+      "Преподаватель 67",
+      "Преподаватель 68",
+      "Преподаватель 69",
+      "Преподаватель 70",
+      "Преподаватель 71",
+      "Преподаватель 72",
+      "Преподаватель 73",
+      "Преподаватель 74",
+      "Преподаватель 75",
+      "Преподаватель 76",
+      "Преподаватель 77",
+      "Преподаватель 78",
+      "Преподаватель 79",
+      "Преподаватель 80",
+      "Преподаватель 81",
+      "Преподаватель 82",
+      "Преподаватель 83",
+      "Преподаватель 84",
+      "Преподаватель 85"
+    ],
+    "inactive": [
+      "Преподаватель 05",
+      "Преподаватель 06",
+      "Преподаватель 12",
+      "Преподаватель 13",
+      "Преподаватель 14",
+      "Преподаватель 24",
+      "Преподаватель 26",
+      "Преподаватель 28",
+      "Преподаватель 31",
+      "Преподаватель 34",
+      "Преподаватель 36",
+      "Преподаватель 38",
+      "Преподаватель 45",
+      "Преподаватель 55",
+      "Преподаватель 57",
+      "Преподаватель 59",
+      "Преподаватель 62",
+      "Преподаватель 64",
+      "Преподаватель 66",
+      "Преподаватель 67",
+      "Преподаватель 68",
+      "Преподаватель 71",
+      "Преподаватель 77",
+      "Преподаватель 84"
+    ],
+    "active_count": 61,
+    "inactive_count": 24
+  },
+  "rooms": [
+    {
+      "name": "2-105 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "2-108",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "2-109",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "2-205",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "2-206 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "2-211",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "2-212",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "2-316",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-103 (лаб)",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "3-103 к",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-111",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "3-113",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-114",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "3-201м",
+      "campus": "Казинца",
+      "room_type": "маст"
+    },
+    {
+      "name": "3-202 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-205 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-207",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-208 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-209",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-210",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-212 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "301",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "302",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "303",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "304",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "401 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "404",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "501 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "502",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "503 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "504 (к)",
+      "campus": "Казинца",
+      "room_type": "комп"
+    },
+    {
+      "name": "602",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "603",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "702",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "703",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "704",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-201",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-319",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-322",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-011 маст",
+      "campus": "Казинца",
+      "room_type": "маст"
+    },
+    {
+      "name": "Кн.2-112 м",
+      "campus": "Казинца",
+      "room_type": "спец_лаб"
+    },
+    {
+      "name": "Кн.2-310",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-312",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-314",
+      "campus": "Казинца",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-323 маст",
+      "campus": "Казинца",
+      "room_type": "маст"
+    },
+    {
+      "name": "Кн.2-413 маст",
+      "campus": "Казинца",
+      "room_type": "маст"
+    },
+    {
+      "name": "2-205",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "3-103 к",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-111 (к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "3-202 (к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "404",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "501 (к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "603",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "702",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "703",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн 1-109(к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "Кн.1-107",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-111",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-124",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-126",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-127",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-129(к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "Кн.1-201",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-206",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-212",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-224(к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "Кн.1-317",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-319",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-322",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.1-325(к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "Кн.132(к)",
+      "campus": "Кнорина",
+      "room_type": "комп"
+    },
+    {
+      "name": "Кн.2-310",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-312",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Кн.2-314",
+      "campus": "Кнорина",
+      "room_type": "лек"
+    },
+    {
+      "name": "Спортзал Каз-1",
+      "campus": "Казинца",
+      "room_type": "спорт"
+    },
+    {
+      "name": "Спортзал Каз-2",
+      "campus": "Казинца",
+      "room_type": "спорт"
+    },
+    {
+      "name": "Спортзал Каз-3",
+      "campus": "Казинца",
+      "room_type": "спорт"
+    },
+    {
+      "name": "Спортзал Кн-1",
+      "campus": "Кнорина",
+      "room_type": "спорт"
+    },
+    {
+      "name": "Спортзал Кн-2",
+      "campus": "Кнорина",
+      "room_type": "спорт"
+    }
+  ],
+  "curriculum_items": [
+    {
+      "item_id": 0,
+      "group": "100МНЭ",
+      "subject": "Элект практ",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 82",
+      "weekly_pairs": 15,
+      "subgroup": 1,
+      "paired_id": "100МНЭ_Элект практ_Элект практ_1_2",
+      "home_rooms": [
+        "Кн.2-323 маст"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 1,
+      "group": "100МНЭ",
+      "subject": "Элект практ",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 85",
+      "weekly_pairs": 15,
+      "subgroup": 2,
+      "paired_id": "100МНЭ_Элект практ_Элект практ_1_2",
+      "home_rooms": [
+        "3-201м"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 2,
+      "group": "101ТП",
+      "subject": "Оперсис",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 3,
+      "group": "101ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 21",
+      "weekly_pairs": 4,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 4,
+      "group": "101ТП",
+      "subject": "Ин Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 5,
+      "group": "101ТП",
+      "subject": "Охрана труда",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 6,
+      "group": "101ТП",
+      "subject": "Основы инфбезоп",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 7,
+      "group": "101ТП",
+      "subject": "ЗНТЧС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 8,
+      "group": "101ТП",
+      "subject": "Астрономия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 9,
+      "group": "101ТП",
+      "subject": "JavaScript",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-224(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 10,
+      "group": "101ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 11,
+      "group": "102М",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 12,
+      "group": "102М",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 13,
+      "group": "102М",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 14,
+      "group": "102М",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-124"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 15,
+      "group": "102М",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 16,
+      "group": "102М",
+      "subject": "Ист Бел в к ВС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 17,
+      "group": "102М",
+      "subject": "Биология",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 18,
+      "group": "102М",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 19,
+      "group": "102М",
+      "subject": "Русс яз об курс",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 20,
+      "group": "102М",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 21,
+      "group": "103М",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 22,
+      "group": "103М",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-124"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 23,
+      "group": "103М",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 24,
+      "group": "103М",
+      "subject": "Биология",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 25,
+      "group": "103М",
+      "subject": "ДП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 79",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "103М_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 26,
+      "group": "103М",
+      "subject": "Мед Под",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 09",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "103М_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 27,
+      "group": "103М",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 78",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 28,
+      "group": "103М",
+      "subject": "Ист Бел в к ВС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 29,
+      "group": "103М",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 30,
+      "group": "103М",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 31,
+      "group": "103М",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 32,
+      "group": "103М",
+      "subject": "Русс яз об курс",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 33,
+      "group": "103М",
+      "subject": "ЛГ пр-м ин яз",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 34,
+      "group": "103М",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 35,
+      "group": "104РТК",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 36,
+      "group": "104РТК",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "502",
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 37,
+      "group": "104РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "104РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 38,
+      "group": "104РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "104РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 39,
+      "group": "104РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 3,
+      "paired_id": "104РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 40,
+      "group": "104РТК",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "302",
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 41,
+      "group": "104РТК",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 42,
+      "group": "104РТК",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 43,
+      "group": "104РТК",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "104РТК_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 44,
+      "group": "104РТК",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "104РТК_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 45,
+      "group": "104РТК",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 46,
+      "group": "104РТК",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 47,
+      "group": "104РТК",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 48,
+      "group": "105ТП",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "105ТП_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 49,
+      "group": "105ТП",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "105ТП_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 50,
+      "group": "105ТП",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 51,
+      "group": "105ТП",
+      "subject": "ДП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 79",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "105ТП_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "704"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 52,
+      "group": "105ТП",
+      "subject": "Мед Под",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 75",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "105ТП_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "302"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 53,
+      "group": "105ТП",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 54,
+      "group": "105ТП",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "702"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 55,
+      "group": "105ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "105ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 56,
+      "group": "105ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 30",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "105ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 57,
+      "group": "105ТП",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "302"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 58,
+      "group": "105ТП",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 59,
+      "group": "105ТП",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 60,
+      "group": "105ТП",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "502"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 61,
+      "group": "105ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 62,
+      "group": "106МНЭ",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 63,
+      "group": "106МНЭ",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "702"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 64,
+      "group": "106МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "106МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 65,
+      "group": "106МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "106МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 66,
+      "group": "106МНЭ",
+      "subject": "ДП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 79",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "106МНЭ_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "704"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 67,
+      "group": "106МНЭ",
+      "subject": "Мед Под",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 75",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "106МНЭ_ДП_Мед Под_1_2",
+      "home_rooms": [
+        "302"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 68,
+      "group": "106МНЭ",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "502"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 69,
+      "group": "106МНЭ",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 70,
+      "group": "106МНЭ",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "106МНЭ_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 71,
+      "group": "106МНЭ",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "106МНЭ_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 72,
+      "group": "106МНЭ",
+      "subject": "Ист Бел в к ВС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-316"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 73,
+      "group": "106МНЭ",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 75",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "302"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 74,
+      "group": "106МНЭ",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 75,
+      "group": "106МНЭ",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 76,
+      "group": "106МНЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 77,
+      "group": "107ТЭ",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 78,
+      "group": "107ТЭ",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 79,
+      "group": "107ТЭ",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 80,
+      "group": "107ТЭ",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "107ТЭ_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "501 (к)",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 81,
+      "group": "107ТЭ",
+      "subject": "Информатика",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "107ТЭ_Информатика_Информатика_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 82,
+      "group": "107ТЭ",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-124"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 83,
+      "group": "107ТЭ",
+      "subject": "Биология",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 84,
+      "group": "107ТЭ",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 85,
+      "group": "107ТЭ",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 86,
+      "group": "107ТЭ",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 87,
+      "group": "107ТЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 30",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 88,
+      "group": "107ТЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 83",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 89,
+      "group": "107ТЭ",
+      "subject": "ЛГ пр-м ин яз",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 90,
+      "group": "108ТЭ",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-124"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 91,
+      "group": "108ТЭ",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 92,
+      "group": "108ТЭ",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 93,
+      "group": "108ТЭ",
+      "subject": "Рус Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 61",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "404"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 94,
+      "group": "108ТЭ",
+      "subject": "Биология",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 95,
+      "group": "108ТЭ",
+      "subject": "Бел Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-322",
+        "702"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 96,
+      "group": "108ТЭ",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 97,
+      "group": "108ТЭ",
+      "subject": "Бел Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "702"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 98,
+      "group": "108ТЭ",
+      "subject": "ДП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 79",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 99,
+      "group": "108ТЭ",
+      "subject": "Ист Бел в к ВС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 20",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 100,
+      "group": "108ТЭ",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 101,
+      "group": "108ТЭ",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 102,
+      "group": "108ТЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 103,
+      "group": "109ТП",
+      "subject": "Бел Лит",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 104,
+      "group": "109ТП",
+      "subject": "Физика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 105,
+      "group": "109ТП",
+      "subject": "География",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 106,
+      "group": "109ТП",
+      "subject": "Математика",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 21",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 107,
+      "group": "109ТП",
+      "subject": "Ист Бел в к ВС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 20",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 108,
+      "group": "109ТП",
+      "subject": "Рус Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 109,
+      "group": "109ТП",
+      "subject": "Черчение",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 110,
+      "group": "109ТП",
+      "subject": "Химия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 78",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 111,
+      "group": "109ТП",
+      "subject": "Бел Яз",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 112,
+      "group": "109ТП",
+      "subject": "Биология",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-312"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 113,
+      "group": "109ТП",
+      "subject": "Соц ориент",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 53",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 114,
+      "group": "167ТП",
+      "subject": "АвтУпрДеят",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 6,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн 1-109(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 115,
+      "group": "167ТП",
+      "subject": "Основы права",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн 1-109(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 116,
+      "group": "167ТП",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 4,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн 1-109(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 117,
+      "group": "167ТП",
+      "subject": "Бел Яз Проф",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн 1-109(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 118,
+      "group": "167ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 18",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 119,
+      "group": "167ТП",
+      "subject": "ООСиЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн 1-109(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 120,
+      "group": "168МНЭ",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-206"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 121,
+      "group": "168МНЭ",
+      "subject": "Основы права",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 122,
+      "group": "168МНЭ",
+      "subject": "Осн наноэле тех",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 56",
+      "weekly_pairs": 6,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319",
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 123,
+      "group": "168МНЭ",
+      "subject": "ООСиЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-111",
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 124,
+      "group": "168МНЭ",
+      "subject": "Осн экон и ПД",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 125,
+      "group": "168МНЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 78",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 126,
+      "group": "169ТП",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 20",
+      "weekly_pairs": 9,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-107"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 127,
+      "group": "169ТП",
+      "subject": "Техн коммун",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 53",
+      "weekly_pairs": 8,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-107"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 128,
+      "group": "79ТЭ",
+      "subject": "Техн практика",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 6,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 129,
+      "group": "79ТЭ",
+      "subject": "Техн практика",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 6,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 130,
+      "group": "80РТК",
+      "subject": "НЭОПИМ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 4,
+      "subgroup": 2,
+      "paired_id": "80РТК_ИнЯз Проф_НЭОПИМ_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 131,
+      "group": "80РТК",
+      "subject": "Пром контрол",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "80РТК_Пром контрол_Техоб и ср роб_1_2",
+      "home_rooms": [
+        "Кн.2-413 маст"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 132,
+      "group": "80РТК",
+      "subject": "Осн эконом и ПД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "80РТК_НЭОПИМ_Осн эконом и ПД_1_2",
+      "home_rooms": [
+        "Кн.1-201",
+        "2-108"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 133,
+      "group": "80РТК",
+      "subject": "НЭОПИМ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "80РТК_НЭОПИМ_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 134,
+      "group": "80РТК",
+      "subject": "Осн эконом и ПД",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-108"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 135,
+      "group": "80РТК",
+      "subject": "Осн эконом и ПД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "80РТК_Осн эконом и ПД_НЭОПИМ_1_2",
+      "home_rooms": [
+        "2-108"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 136,
+      "group": "80РТК",
+      "subject": "Техоб и ср роб",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "80РТК_Пром контрол_Техоб и ср роб_1_2",
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 137,
+      "group": "80РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "80РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 138,
+      "group": "80РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "80РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 139,
+      "group": "80РТК",
+      "subject": "Основы права",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 140,
+      "group": "80РТК",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 25",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "80РТК_ИнЯз Проф_НЭОПИМ_1_2",
+      "home_rooms": [
+        "3-207"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 141,
+      "group": "80РТК",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "80РТК_НЭОПИМ_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 142,
+      "group": "80РТК",
+      "subject": "Техоб и ср роб",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "80РТК_Техоб и ср роб_Пром контрол_1_2",
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 143,
+      "group": "80РТК",
+      "subject": "Пром контрол",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "80РТК_Техоб и ср роб_Пром контрол_1_2",
+      "home_rooms": [
+        "Кн.2-413 маст"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 144,
+      "group": "80РТК",
+      "subject": "Повтор электрон",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 145,
+      "group": "80РТК",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 146,
+      "group": "81ТП",
+      "subject": "ООСиЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 147,
+      "group": "81ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "81ТП_Веб-програмСерв_Веб-програмСерв_1_2",
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 148,
+      "group": "81ТП",
+      "subject": "Визуал проект",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 149,
+      "group": "81ТП",
+      "subject": "Системы упр БД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "81ТП_ИнЯз Проф_Системы упр БД_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 150,
+      "group": "81ТП",
+      "subject": "Основы права",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 151,
+      "group": "81ТП",
+      "subject": "Визуал проект",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "81ТП_ИнЯз Проф_Визуал проект_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 152,
+      "group": "81ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "81ТП_Системы упр БД_Веб-програмСерв_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 153,
+      "group": "81ТП",
+      "subject": "Визуал проект",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "81ТП_Визуал проект_Android_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 154,
+      "group": "81ТП",
+      "subject": "Android",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "81ТП_Визуал проект_Android_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 155,
+      "group": "81ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 156,
+      "group": "81ТП",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 25",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "81ТП_ИнЯз Проф_Системы упр БД_1_2",
+      "home_rooms": [
+        "3-207"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 157,
+      "group": "81ТП",
+      "subject": "Системы упр БД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "81ТП_Системы упр БД_Веб-програмСерв_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 158,
+      "group": "81ТП",
+      "subject": "Предп деят и УП",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "81ТП_Системы упр БД_Предп деят и УП_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 159,
+      "group": "81ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "81ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 160,
+      "group": "81ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "81ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 161,
+      "group": "81ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 3,
+      "paired_id": "81ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 162,
+      "group": "81ТП",
+      "subject": "АвтУпрДеят",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 163,
+      "group": "81ТП",
+      "subject": "Android",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 164,
+      "group": "82ТП",
+      "subject": "Основы права",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 165,
+      "group": "82ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "82ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 166,
+      "group": "82ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "82ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 167,
+      "group": "82ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 3,
+      "paired_id": "82ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 168,
+      "group": "82ТП",
+      "subject": "Системы упр БД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 4,
+      "subgroup": 1,
+      "paired_id": "82ТП_Системы упр БД_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 169,
+      "group": "82ТП",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 25",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "82ТП_Системы упр БД_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-207"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 170,
+      "group": "82ТП",
+      "subject": "ООСиЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 171,
+      "group": "82ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 172,
+      "group": "82ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "82ТП_Системы упр БД_Веб-програмСерв_1_2",
+      "home_rooms": [
+        "503 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 173,
+      "group": "82ТП",
+      "subject": "Визуал проект",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "82ТП_Визуал проект_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 174,
+      "group": "82ТП",
+      "subject": "Веб-програмСерв",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "82ТП_Веб-програмСерв_Android_1_2",
+      "home_rooms": [
+        "503 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 175,
+      "group": "82ТП",
+      "subject": "Системы упр БД",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "82ТП_Android_Системы упр БД_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 176,
+      "group": "82ТП",
+      "subject": "Android",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "82ТП_Веб-програмСерв_Android_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 177,
+      "group": "82ТП",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "82ТП_ИнЯз Проф_Визуал проект_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 178,
+      "group": "82ТП",
+      "subject": "Визуал проект",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "82ТП_ИнЯз Проф_Визуал проект_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 179,
+      "group": "82ТП",
+      "subject": "Android",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "82ТП_Android_Системы упр БД_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 180,
+      "group": "82ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 181,
+      "group": "83МНЭ",
+      "subject": "Техн практика",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 6,
+      "subgroup": 1,
+      "paired_id": "83МНЭ_Техн практика_Техн практика_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 182,
+      "group": "83МНЭ",
+      "subject": "Техн практика",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 6,
+      "subgroup": 2,
+      "paired_id": "83МНЭ_Техн практика_Техн практика_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 183,
+      "group": "84МНЭ",
+      "subject": "Испытание",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 4,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 184,
+      "group": "84МНЭ",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 5,
+      "subgroup": 2,
+      "paired_id": "84МНЭ_ИнЯз Проф_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 185,
+      "group": "84МНЭ",
+      "subject": "Осн экон и ПД",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 07",
+      "weekly_pairs": 4,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-108"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 186,
+      "group": "84МНЭ",
+      "subject": "НТиН",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 56",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-103 (лаб)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 187,
+      "group": "84МНЭ",
+      "subject": "Функц. микроэл.",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 188,
+      "group": "84МНЭ",
+      "subject": "ИнЯз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 25",
+      "weekly_pairs": 4,
+      "subgroup": 1,
+      "paired_id": "84МНЭ_ИнЯз Проф_ИнЯз Проф_1_2",
+      "home_rooms": [
+        "3-207"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 189,
+      "group": "84МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 190,
+      "group": "84МНЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 191,
+      "group": "85М",
+      "subject": "Уч. пр. квалиф",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 49",
+      "weekly_pairs": 6,
+      "subgroup": 1,
+      "paired_id": "85М_Уч. пр. квалиф_Уч. пр. квалиф_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 192,
+      "group": "85М",
+      "subject": "Уч. пр. квалиф",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 85",
+      "weekly_pairs": 6,
+      "subgroup": 2,
+      "paired_id": "85М_Уч. пр. квалиф_Уч. пр. квалиф_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 193,
+      "group": "86РТК",
+      "subject": "АвтомПр",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 194,
+      "group": "86РТК",
+      "subject": "Цифр и микр тех",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 4,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 195,
+      "group": "86РТК",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "86РТК_Пром электр_Пром электр_1_2",
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 196,
+      "group": "86РТК",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "86РТК_Нал и эк промро_Пром электр_1_2",
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 197,
+      "group": "86РТК",
+      "subject": "Механ пром робо",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 198,
+      "group": "86РТК",
+      "subject": "Инф техн",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 19",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "86РТК_Инф техн_Элпр и автом_1_2",
+      "home_rooms": [
+        "2-206 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 199,
+      "group": "86РТК",
+      "subject": "Элпр и автом",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "86РТК_Инф техн_Элпр и автом_1_2",
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 200,
+      "group": "86РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "86РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 201,
+      "group": "86РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "86РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 202,
+      "group": "86РТК",
+      "subject": "Элпр и автом",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "86РТК_Элпр и автом_Нал и эк промро_1_2",
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 203,
+      "group": "86РТК",
+      "subject": "Нал и эк промро",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "86РТК_Элпр и автом_Нал и эк промро_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 204,
+      "group": "86РТК",
+      "subject": "Пласт м и об",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 10",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-209"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 205,
+      "group": "86РТК",
+      "subject": "Элпр и автом",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 44",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 206,
+      "group": "86РТК",
+      "subject": "АвтомПр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 207,
+      "group": "86РТК",
+      "subject": "Нал и эк промро",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "86РТК_Нал и эк промро_Пром электр_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 208,
+      "group": "86РТК",
+      "subject": "АвтомПр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 209,
+      "group": "86РТК",
+      "subject": "Микропр в робот",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 210,
+      "group": "86РТК",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 211,
+      "group": "87ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "87ТП_Тест ПО_КПиЯП_1_2",
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 212,
+      "group": "87ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "503 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 213,
+      "group": "87ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "87ТП_Совр. язык Java_Тест ПО_1_2",
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 214,
+      "group": "87ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 215,
+      "group": "87ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "87ТП_ПСС internet_ПСС internet_1_2",
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 216,
+      "group": "87ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 4,
+      "subgroup": 2,
+      "paired_id": "87ТП_Тест ПО_КПиЯП_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 217,
+      "group": "87ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "87ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 218,
+      "group": "87ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "87ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 219,
+      "group": "87ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 220,
+      "group": "87ТП",
+      "subject": "Техн коммун",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 43",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "304",
+        "2-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 221,
+      "group": "87ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "87ТП_Комп сети_КПиЯП_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 222,
+      "group": "87ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "87ТП_ПСС internet_Комп сети_1_2",
+      "home_rooms": [
+        "2-105 (к)",
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 223,
+      "group": "87ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "87ТП_Совр. язык Java_Тест ПО_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 224,
+      "group": "87ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "87ТП_Тех разр ПО_КПиЯП_1_2",
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 225,
+      "group": "87ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 226,
+      "group": "87ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "87ТП_ПСС internet_ПСС internet_1_2",
+      "home_rooms": [
+        "503 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 227,
+      "group": "88ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "88ТП_КПиЯП_Комп сети_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 228,
+      "group": "88ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "88ТП_КПиЯП_Комп сети_1_2",
+      "home_rooms": [
+        "2-105 (к)",
+        "501 (к)",
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 229,
+      "group": "88ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "88ТП_ПСС internet_ПСС internet_1_2",
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 230,
+      "group": "88ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 231,
+      "group": "88ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "88ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 232,
+      "group": "88ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "88ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 233,
+      "group": "88ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 3,
+      "paired_id": "88ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 234,
+      "group": "88ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 235,
+      "group": "88ТП",
+      "subject": "Защита КИ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 19",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-206 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 236,
+      "group": "88ТП",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-316"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 237,
+      "group": "88ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 238,
+      "group": "88ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 239,
+      "group": "88ТП",
+      "subject": "Техн коммун",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 43",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "304"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 240,
+      "group": "88ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "88ТП_ПСС internet_ПСС internet_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 241,
+      "group": "88ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "88ТП_Совр. язык Java_Защита КИ_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 242,
+      "group": "88ТП",
+      "subject": "Защита КИ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 19",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "88ТП_Совр. язык Java_Защита КИ_1_2",
+      "home_rooms": [
+        "2-206 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 243,
+      "group": "88ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 244,
+      "group": "88ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 245,
+      "group": "89ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "89ТП_КПиЯП_Тест ПО_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 246,
+      "group": "89ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 01",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "89ТП_ПСС internet_Тест ПО_1_2",
+      "home_rooms": [
+        "503 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 247,
+      "group": "89ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "89ТП_ПСС internet_Комп сети_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 248,
+      "group": "89ТП",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-316"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 249,
+      "group": "89ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "89ТП_Совр. язык Java_Совр. язык Java_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 250,
+      "group": "89ТП",
+      "subject": "Совр. язык Java",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "89ТП_Совр. язык Java_Совр. язык Java_1_2",
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 251,
+      "group": "89ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "89ТП_ПСС internet_ПСС internet_1_2",
+      "home_rooms": [
+        "503 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 252,
+      "group": "89ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "89ТП_Тест ПО_КПиЯП_1_2",
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 253,
+      "group": "89ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 30",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "89ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 254,
+      "group": "89ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "89ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 255,
+      "group": "89ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 42",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "89ТП_Тест ПО_КПиЯП_1_2",
+      "home_rooms": [
+        "3-212 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 256,
+      "group": "89ТП",
+      "subject": "Техн коммун",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 43",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "304"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 257,
+      "group": "89ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "89ТП_ПСС internet_Тест ПО_1_2",
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 258,
+      "group": "89ТП",
+      "subject": "Защита КИ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 19",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-206 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 259,
+      "group": "89ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 260,
+      "group": "89ТП",
+      "subject": "Комп сети",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "89ТП_Комп сети_Тех разр ПО_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 261,
+      "group": "89ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "89ТП_Комп сети_Тех разр ПО_1_2",
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 262,
+      "group": "89ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 263,
+      "group": "89ТП",
+      "subject": "Защита КИ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 19",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "2-206 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 264,
+      "group": "90МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 265,
+      "group": "90МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 266,
+      "group": "90МНЭ",
+      "subject": "Техн и обор ЛП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 267,
+      "group": "90МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "90МНЭ_Проект МУ_ОсА_1_2",
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 268,
+      "group": "90МНЭ",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "90МНЭ_Проект МУ_ОсА_1_2",
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 269,
+      "group": "90МНЭ",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-316"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 270,
+      "group": "90МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 271,
+      "group": "90МНЭ",
+      "subject": "Техн пр МЭУ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 78",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "304"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 272,
+      "group": "90МНЭ",
+      "subject": "ОсА",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 273,
+      "group": "90МНЭ",
+      "subject": "Тех и обо ВЭиПХ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 274,
+      "group": "90МНЭ",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "90МНЭ_ОсА_Проект МУ_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 275,
+      "group": "90МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "90МНЭ_ОсА_Проект МУ_1_2",
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 276,
+      "group": "90МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "90МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 277,
+      "group": "90МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "90МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 278,
+      "group": "90МНЭ",
+      "subject": "Оборуд пр м/э",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 279,
+      "group": "90МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 280,
+      "group": "90МНЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 281,
+      "group": "91МНЭ",
+      "subject": "Уч. пр. квалиф",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 56",
+      "weekly_pairs": 6,
+      "subgroup": 1,
+      "paired_id": "91МНЭ_Уч. пр. квалиф_Уч. пр. квалиф_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 282,
+      "group": "91МНЭ",
+      "subject": "Уч. пр. квалиф",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 78",
+      "weekly_pairs": 6,
+      "subgroup": 2,
+      "paired_id": "91МНЭ_Уч. пр. квалиф_Уч. пр. квалиф_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 283,
+      "group": "92МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 30",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 284,
+      "group": "92МНЭ",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 285,
+      "group": "92МНЭ",
+      "subject": "Оборуд пр м/э",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Оборуд пр м/э_Проект МУ_1_2",
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 286,
+      "group": "92МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_Тех и обо ВЭиПХ_Проект МУ_1_2",
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 287,
+      "group": "92МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 288,
+      "group": "92МНЭ",
+      "subject": "Тех и обо ВЭиПХ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 289,
+      "group": "92МНЭ",
+      "subject": "Техн пр МЭУ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_Проект МУ_Техн пр МЭУ_1_2",
+      "home_rooms": [
+        "2-109",
+        "2-211"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 290,
+      "group": "92МНЭ",
+      "subject": "Техн пр МЭУ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-205",
+        "2-211"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 291,
+      "group": "92МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Проект МУ_Тех и обо ВЭиПХ_1_2",
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 292,
+      "group": "92МНЭ",
+      "subject": "Проект МУ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 63",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Проект МУ_Анал и циф схем_1_2",
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 293,
+      "group": "92МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_Техн пр МЭУ_Анал и циф схем_1_2",
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 294,
+      "group": "92МНЭ",
+      "subject": "Оборуд пр м/э",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-109"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 295,
+      "group": "92МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Анал и циф схем_Оборуд пр м/э_1_2",
+      "home_rooms": [
+        "3-202 (к)",
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 296,
+      "group": "92МНЭ",
+      "subject": "Оборуд пр м/э",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_Анал и циф схем_Оборуд пр м/э_1_2",
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 297,
+      "group": "92МНЭ",
+      "subject": "Техн пр МЭУ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 46",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Техн пр МЭУ_Анал и циф схем_1_2",
+      "home_rooms": [
+        "2-211"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 298,
+      "group": "92МНЭ",
+      "subject": "Тех и обо ВЭиПХ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "92МНЭ_Тех и обо ВЭиПХ_Проект МУ_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 299,
+      "group": "92МНЭ",
+      "subject": "Анал и циф схем",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 300,
+      "group": "92МНЭ",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 70",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-316"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 301,
+      "group": "92МНЭ",
+      "subject": "Тех и обо ВЭиПХ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 27",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "92МНЭ_Проект МУ_Тех и обо ВЭиПХ_1_2",
+      "home_rooms": [
+        "3-114"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 302,
+      "group": "92МНЭ",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 303,
+      "group": "93МНЭ",
+      "subject": "Уч. пр. квалиф",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 6,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 304,
+      "group": "94ТП",
+      "subject": "ПСС internet",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-129(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 305,
+      "group": "94ТП",
+      "subject": "История бел гос",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 20",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 306,
+      "group": "94ТП",
+      "subject": "Тех разр ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 39",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.132(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 307,
+      "group": "94ТП",
+      "subject": "Комп сети",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.132(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 308,
+      "group": "94ТП",
+      "subject": "Тест ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 23",
+      "weekly_pairs": 6,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.132(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 309,
+      "group": "94ТП",
+      "subject": "Защита КИ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-129(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 310,
+      "group": "94ТП",
+      "subject": "КПиЯП",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 37",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-129(к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 311,
+      "group": "94ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 53",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 312,
+      "group": "95М",
+      "subject": "Электррадиокомп",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 22",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 313,
+      "group": "95М",
+      "subject": "Электррадиокомп",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 22",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 314,
+      "group": "95М",
+      "subject": "Основы инж гр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "95М_Основы инж гр_Пром электр_1_2",
+      "home_rooms": [
+        "703",
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 315,
+      "group": "95М",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "95М_Основы инж гр_Ин Яз_1_2",
+      "home_rooms": [
+        "Кн.1-126"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 316,
+      "group": "95М",
+      "subject": "Пром электр",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 317,
+      "group": "95М",
+      "subject": "Матвед",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 318,
+      "group": "95М",
+      "subject": "Астрономия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-314"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 319,
+      "group": "95М",
+      "subject": "Тех Мех",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-127"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 320,
+      "group": "95М",
+      "subject": "Матвед",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "95М_Матвед_Основы инж гр_1_2",
+      "home_rooms": [
+        "Кн.1-319"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 321,
+      "group": "95М",
+      "subject": "Основы инж гр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "95М_Пром электр_Основы инж гр_1_2",
+      "home_rooms": [
+        "703",
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 322,
+      "group": "95М",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "95М_Пром электр_Основы инж гр_1_2",
+      "home_rooms": [
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 323,
+      "group": "95М",
+      "subject": "ТОЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-127"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 324,
+      "group": "95М",
+      "subject": "Электррадиокомп",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 22",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 325,
+      "group": "95М",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "95М_Ин Яз_Матвед_1_2",
+      "home_rooms": [
+        "Кн.1-126"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 326,
+      "group": "95М",
+      "subject": "Матвед",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "95М_Ин Яз_Матвед_1_2",
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 327,
+      "group": "95М",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "95М_Основы инж гр_Пром электр_1_2",
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 328,
+      "group": "95М",
+      "subject": "ООСиЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603",
+        "Кн.1-212"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 329,
+      "group": "95М",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 33",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 330,
+      "group": "96РТК",
+      "subject": "Уч прак Слесмех",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 02",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "96РТК_Уч прак Слесмех_Уч прак Слесмех_1_2",
+      "home_rooms": [
+        "Кн.2-011 маст"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 331,
+      "group": "96РТК",
+      "subject": "Уч прак Слесмех",
+      "lesson_type": "Пр-ка",
+      "teacher": "Преподаватель 76",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "96РТК_Уч прак Слесмех_Уч прак Слесмех_1_2",
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 332,
+      "group": "96РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 333,
+      "group": "96РТК",
+      "subject": "Практ электр",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 334,
+      "group": "96РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "96РТК_ТОЭ_Ин Яз_1_2",
+      "home_rooms": [
+        "301"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 335,
+      "group": "96РТК",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "96РТК_ТОЭ_Ин Яз_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 336,
+      "group": "96РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "301"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 337,
+      "group": "96РТК",
+      "subject": "Пром электр",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 338,
+      "group": "96РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "96РТК_Матем в професс_ТОЭ_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 339,
+      "group": "96РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "96РТК_Матем в професс_ТОЭ_1_2",
+      "home_rooms": [
+        "301"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 340,
+      "group": "96РТК",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "96РТК_Ин Яз_Матем в професс_1_2",
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 341,
+      "group": "96РТК",
+      "subject": "Основы инж гр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "96РТК_Ин Яз_Основы инж гр_1_2",
+      "home_rooms": [
+        "703"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 342,
+      "group": "96РТК",
+      "subject": "Матвед",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "96РТК_Матвед_Пром электр_1_2",
+      "home_rooms": [
+        "602"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 343,
+      "group": "96РТК",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "96РТК_Матвед_Пром электр_1_2",
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 344,
+      "group": "96РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "96РТК_Ин Яз_Матем в професс_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 345,
+      "group": "96РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "96РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 346,
+      "group": "96РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 30",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "96РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 347,
+      "group": "96РТК",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 72",
+      "weekly_pairs": 2,
+      "subgroup": 3,
+      "paired_id": "96РТК_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 348,
+      "group": "96РТК",
+      "subject": "Матвед",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 60",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "602"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 349,
+      "group": "96РТК",
+      "subject": "Основы инж гр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "703"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 350,
+      "group": "96РТК",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 351,
+      "group": "97РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 352,
+      "group": "97РТК",
+      "subject": "Электрорадиоэле",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 22",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "97РТК_Электрорадиоэле_ТОЭ_1_2",
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 353,
+      "group": "97РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "97РТК_Электрорадиоэле_ТОЭ_1_2",
+      "home_rooms": [
+        "Кн.2-112 м"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 354,
+      "group": "97РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 3,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "301"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 355,
+      "group": "97РТК",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "97РТК_Ин Яз_Тех Мех_1_2",
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 356,
+      "group": "97РТК",
+      "subject": "Тех Мех",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "97РТК_Ин Яз_Тех Мех_1_2",
+      "home_rooms": [
+        "3-113"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 357,
+      "group": "97РТК",
+      "subject": "Тех Мех",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "97РТК_Тех Мех_Пром электр_1_2",
+      "home_rooms": [
+        "3-113"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 358,
+      "group": "97РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "97РТК_Основы инж гр_Матем в професс_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 359,
+      "group": "97РТК",
+      "subject": "Основы инж гр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "97РТК_Основы инж гр_Матем в професс_1_2",
+      "home_rooms": [
+        "703"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 360,
+      "group": "97РТК",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 15",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "97РТК_Матем в професс_Ин Яз_1_2",
+      "home_rooms": [
+        "3-205 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 361,
+      "group": "97РТК",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "97РТК_Матем в професс_Ин Яз_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 362,
+      "group": "97РТК",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 47",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "97РТК_Тех Мех_Пром электр_1_2",
+      "home_rooms": [
+        "3-103 к"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 363,
+      "group": "97РТК",
+      "subject": "Пром электр",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 364,
+      "group": "97РТК",
+      "subject": "ТОЭ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 69",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "97РТК_ТОЭ_Электрорадиоэле_1_2",
+      "home_rooms": [
+        "Кн.2-112 м"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 365,
+      "group": "97РТК",
+      "subject": "Электрорадиоэле",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 22",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "97РТК_ТОЭ_Электрорадиоэле_1_2",
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 366,
+      "group": "97РТК",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 32",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 367,
+      "group": "97РТК",
+      "subject": "Тех Мех",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 11",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-113"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 368,
+      "group": "97РТК",
+      "subject": "Пром электр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 51",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 369,
+      "group": "97РТК",
+      "subject": "Астрономия",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 40",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "502"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 370,
+      "group": "98ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 371,
+      "group": "98ТП",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "98ТП_Ин Яз_Матем в професс_1_2",
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 372,
+      "group": "98ТП",
+      "subject": "Оперсис",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "98ТП_Оперсис_ОсА_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 373,
+      "group": "98ТП",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "98ТП_ОсА_Ин Яз_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 374,
+      "group": "98ТП",
+      "subject": "Охрана труда",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-209"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 375,
+      "group": "98ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "98ТП_Матем в професс_Арифмет-лог ВТ_1_2",
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 376,
+      "group": "98ТП",
+      "subject": "Арифмет-лог ВТ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "98ТП_Арифмет-лог ВТ_Матем в професс_1_2",
+      "home_rooms": [
+        "2-105 (к)",
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 377,
+      "group": "98ТП",
+      "subject": "ССПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "98ТП_Арифмет-лог ВТ_ССПО_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 378,
+      "group": "98ТП",
+      "subject": "Арифмет-лог ВТ",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "504 (к)",
+        "401 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 379,
+      "group": "98ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "98ТП_Ин Яз_Матем в професс_1_2",
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 380,
+      "group": "98ТП",
+      "subject": "Арифмет-лог ВТ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "98ТП_Матем в професс_Арифмет-лог ВТ_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 381,
+      "group": "98ТП",
+      "subject": "JavaScript",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 382,
+      "group": "98ТП",
+      "subject": "ОсА",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 383,
+      "group": "98ТП",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "98ТП_ОсА_Ин Яз_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 384,
+      "group": "98ТП",
+      "subject": "ССПО",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "98ТП_ССПО_Оперсис_1_2",
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 385,
+      "group": "98ТП",
+      "subject": "Оперсис",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "98ТП_ССПО_Оперсис_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 386,
+      "group": "98ТП",
+      "subject": "JavaScript",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "2-105 (к)",
+        "3-111",
+        "3-111 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 387,
+      "group": "98ТП",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "98ТП_Оперсис_ОсА_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 388,
+      "group": "98ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 17",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 389,
+      "group": "99ТП",
+      "subject": "Арифмет-лог ВТ",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 390,
+      "group": "99ТП",
+      "subject": "ССПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 80",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-202 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 391,
+      "group": "99ТП",
+      "subject": "Инструмент ПО",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 58",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-208 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 392,
+      "group": "99ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "99ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 393,
+      "group": "99ТП",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 54",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "99ТП_ФЗКиЗ_subgroups",
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 394,
+      "group": "99ТП",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "99ТП_ОсА_Матем в професс_1_2",
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 395,
+      "group": "99ТП",
+      "subject": "Оперсис",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "99ТП_ОсА_Оперсис_1_2",
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 396,
+      "group": "99ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "99ТП_ОсА_Матем в професс_1_2",
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 397,
+      "group": "99ТП",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "99ТП_Ин Яз_Ин Яз_1_2",
+      "home_rooms": [
+        "2-205"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 398,
+      "group": "99ТП",
+      "subject": "Ин Яз",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 81",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "99ТП_Ин Яз_Ин Яз_1_2",
+      "home_rooms": [
+        "3-210"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 399,
+      "group": "99ТП",
+      "subject": "Оперсис",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 16",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "2-105 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 400,
+      "group": "99ТП",
+      "subject": "Охрана труда",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 48",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "3-209"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 401,
+      "group": "99ТП",
+      "subject": "ЗНТЧС",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 52",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "603"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 402,
+      "group": "99ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 403,
+      "group": "99ТП",
+      "subject": "JavaScript",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "501 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 404,
+      "group": "99ТП",
+      "subject": "Матем в професс",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 29",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "99ТП_Матем в професс_JavaScript_1_2",
+      "home_rooms": [
+        "303"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 405,
+      "group": "99ТП",
+      "subject": "JavaScript",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 08",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "99ТП_Матем в професс_JavaScript_1_2",
+      "home_rooms": [
+        "504 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 406,
+      "group": "99ТП",
+      "subject": "ОсА",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": null,
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 407,
+      "group": "99ТП",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 73",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "401 (к)"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 408,
+      "group": "9СР",
+      "subject": "Бел Яз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "9СР_Прав рег упр_Бел Яз Проф_1_2",
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 409,
+      "group": "9СР",
+      "subject": "Стил рус. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "9СР_Стил рус. яз._Стил бел. яз._1_2",
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 410,
+      "group": "9СР",
+      "subject": "Нем. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 3,
+      "subgroup": 2,
+      "paired_id": "9СР_Делопроизводств_Нем. яз._1_2",
+      "home_rooms": [
+        "Кн.1-206"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 411,
+      "group": "9СР",
+      "subject": "Делопроизводств",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 50",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 412,
+      "group": "9СР",
+      "subject": "ФЗКиЗ",
+      "lesson_type": "ФЗКиЗ",
+      "teacher": "Преподаватель 03",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Спортзал Каз-1",
+        "Спортзал Каз-2",
+        "Спортзал Каз-3"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 413,
+      "group": "9СР",
+      "subject": "Стил бел. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "9СР_Стил рус. яз._Стил бел. яз._1_2",
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 414,
+      "group": "9СР",
+      "subject": "Прав рег упр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "9СР_Прав рег упр_Делопроизводств_1_2",
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 415,
+      "group": "9СР",
+      "subject": "Нем. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 41",
+      "weekly_pairs": 3,
+      "subgroup": 1,
+      "paired_id": "9СР_Нем. яз._Стил рус. яз._1_2",
+      "home_rooms": [
+        "Кн.1-206"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 416,
+      "group": "9СР",
+      "subject": "Практика речи",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 65",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "9СР_Бел Яз Проф_Практика речи_1_2",
+      "home_rooms": [
+        "Кн.1-126"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 417,
+      "group": "9СР",
+      "subject": "Бел Яз Проф",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "9СР_Бел Яз Проф_Практика речи_1_2",
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 418,
+      "group": "9СР",
+      "subject": "Делопроизводств",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 50",
+      "weekly_pairs": 2,
+      "subgroup": 2,
+      "paired_id": "9СР_Прав рег упр_Делопроизводств_1_2",
+      "home_rooms": [
+        "Кн.1-325(к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 419,
+      "group": "9СР",
+      "subject": "Делопроизводств",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 50",
+      "weekly_pairs": 2,
+      "subgroup": 1,
+      "paired_id": "9СР_Делопроизводств_Нем. яз._1_2",
+      "home_rooms": [
+        "Кн.1-322",
+        "Кн.1-325(к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 420,
+      "group": "9СР",
+      "subject": "Прав рег упр",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 2,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 421,
+      "group": "9СР",
+      "subject": "Делопроизводств",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 50",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": "9СР_Делопроизводств_Прав рег упр_1_2",
+      "home_rooms": [
+        "Кн.1-325(к)"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 422,
+      "group": "9СР",
+      "subject": "Прав рег упр",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 74",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "9СР_Делопроизводств_Прав рег упр_1_2",
+      "home_rooms": [
+        "Кн.1-201"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 423,
+      "group": "9СР",
+      "subject": "Делопроизводств",
+      "lesson_type": "КП",
+      "teacher": "Преподаватель 50",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "9СР_Нем. яз._Делопроизводств_1_2",
+      "home_rooms": [
+        "Кн.1-322"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 424,
+      "group": "9СР",
+      "subject": "Стил бел. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 04",
+      "weekly_pairs": 1,
+      "subgroup": 1,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.1-317"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 425,
+      "group": "9СР",
+      "subject": "Стил рус. яз.",
+      "lesson_type": "ЛР",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 2,
+      "paired_id": "9СР_Нем. яз._Стил рус. яз._1_2",
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": true
+    },
+    {
+      "item_id": 426,
+      "group": "9СР",
+      "subject": "Ос стил русс яз",
+      "lesson_type": "ф-в",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "Кн.2-310"
+      ],
+      "is_double_pair_ok": false
+    },
+    {
+      "item_id": 427,
+      "group": "9СР",
+      "subject": "Инф час",
+      "lesson_type": "Лек",
+      "teacher": "Преподаватель 35",
+      "weekly_pairs": 1,
+      "subgroup": 0,
+      "paired_id": null,
+      "home_rooms": [
+        "-"
+      ],
+      "is_double_pair_ok": false
+    }
+  ]
+}

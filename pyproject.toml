@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mgkct-timetable-optimizer"
+version = "1.0.0"
+description = "Automated academic timetable optimization and dynamic disruption rescheduling engine for MGKCT on Google OR-Tools CP-SAT"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "MGKCT Timetable Optimization Contributors" }
+]
+keywords = [
+    "cpsat",
+    "or-tools",
+    "timetable",
+    "scheduling",
+    "optimization",
+    "constraint-programming",
+    "discrete-optimization"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "ortools>=9.8.3296"
+]
+
+[project.scripts]
+mgkct-optimizer = "mgkct_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
