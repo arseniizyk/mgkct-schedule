@@ -129,6 +129,9 @@ All agents modifying optimization logic must preserve the division between Hard 
     $$x_{i, d, s} = 0, \quad \forall i, s$$
     $$\text{act}_{g, d, s} = 0, \quad \forall g, s$$
     The engine computes both fixed secular/religious holidays and the floating Easter-derived Radunitsa using the astronomical Meeus algorithm.
+11. **Informational Hour End-of-Day Placement (No Gap/Lesson Splitting by Info Hour)**:
+    An informational hour (`Инф час` / `Кураторский час`) must strictly conclude the student group's academic day. It is strictly prohibited to schedule any regular academic pairs after the informational hour on the same day (e.g. 3 regular pairs, followed by informational hour, followed by another regular pair is forbidden):
+    $$\text{act}_{g, d, s'} = 0, \quad \forall s' > s \quad \text{if } x_{i, d, s} = 1, \quad \forall i \in \text{Items}(g, \text{InfoHour})$$
 
 ---
 
@@ -214,6 +217,7 @@ mgkct-timetable-optimizer/
      - `cross_campus_violations == 0` (Zero teacher multi-campus days).
      - `room_conflicts == 0` (Zero physical room collisions).
      - `pe_daily_slot_violations == 0` (Zero multiple-PE days).
+     - `info_hour_middle_violations == 0` (Zero regular lessons after info hour).
      - `first_pair_start_pct >= 90.0%` (Vast majority of shift 1 starting slot 0).
 3. **Data Integrity**:
    - Group names, teacher names, and room numbers must strictly match MGKCT official nomenclatures (e.g. `Кн.` prefix for Knorina rooms, `(к)` for computer classes).

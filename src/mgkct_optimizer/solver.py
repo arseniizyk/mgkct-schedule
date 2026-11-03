@@ -201,11 +201,21 @@ class MGKCTScheduleOptimizer:
 
                 # Лимит пар в день (не более 4 пар; 5 пар допускается ТОЛЬКО если в этот день стоит Инф час)
                 # Группы могут учиться по 5-ю пару (слоты 1..4), но с 1 по 5 пару в один день запрещено!
-                inf_items_g = [it for it in g_it_list if "Инф час" in it.subject]
+                inf_items_g = [
+                    it for it in g_it_list
+                    if "инф час" in it.subject.lower() or "информацион" in it.subject.lower()
+                ]
                 if inf_items_g:
                     has_inf_day = model.NewBoolVar(f"has_inf_{g_name}_{d}")
                     model.Add(sum(x[(it.item_id, d, s)] for it in inf_items_g for s in range(MAX_SLOTS)) == has_inf_day)
                     day_cap = 3 if d == 5 else (4 + has_inf_day)
+
+                    # ЖЕСТКОЕ ОГРАНИЧЕНИЕ: Информационный час строго завершает учебный день группы
+                    # Запрещено ставить любые пары после информационного часа (нельзя делать окна / разрыв инф. часом)
+                    for it in inf_items_g:
+                        for s in range(MAX_SLOTS):
+                            for s_after in range(s + 1, MAX_SLOTS):
+                                model.Add(group_active[(g_name, d, s_after)] == 0).OnlyEnforceIf(x[(it.item_id, d, s)])
                 else:
                     day_cap = 3 if d == 5 else 4
                 model.Add(sum(group_active[(g_name, d, s)] for s in range(MAX_SLOTS)) <= day_cap)
@@ -220,7 +230,9 @@ class MGKCTScheduleOptimizer:
                 for sub_k in subs_to_check:
                     sub_k_academic = [
                         it for it in g_it_list
-                        if it.subgroup in (0, sub_k) and "Инф час" not in it.subject
+                        if it.subgroup in (0, sub_k)
+                        and "инф час" not in it.subject.lower()
+                        and "информацион" not in it.subject.lower()
                     ]
                     academic_cap = 3 if d == 5 else 4
                     model.Add(sum(x[(it.item_id, d, s)] for it in sub_k_academic for s in range(MAX_SLOTS)) <= academic_cap)
@@ -295,7 +307,10 @@ class MGKCTScheduleOptimizer:
         penalties = []
 
         for t_name, t_it_list in teacher_items.items():
-            academic_items = [it for it in t_it_list if "Инф час" not in it.subject]
+            academic_items = [
+                it for it in t_it_list
+                if "инф час" not in it.subject.lower() and "информацион" not in it.subject.lower()
+            ]
             for d in range(NUM_DAYS):
                 if d in holidays_set:
                     continue

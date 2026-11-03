@@ -160,6 +160,29 @@ def compute_schedule_metrics(
     holidays_set = set(holidays or [])
     holiday_violations = sum(1 for les in schedule if les.day in holidays_set)
 
+    # Аудит размещения информационного часа:
+    # Запрещено ставить любые пары группы после информационного часа в тот же день (нельзя делать окна / разрыв пар инф. часом)
+    info_hour_middle_violations = 0
+    by_group_day_lessons: Dict[Tuple[str, int], List[ScheduledLesson]] = defaultdict(list)
+    for les in schedule:
+        by_group_day_lessons[(les.group, les.day)].append(les)
+
+    for (g_name, d), l_list in by_group_day_lessons.items():
+        inf_slots = [
+            l.slot for l in l_list
+            if "инф час" in l.subject.lower() or "информацион" in l.subject.lower()
+        ]
+        if inf_slots:
+            max_inf_slot = max(inf_slots)
+            has_later_lesson = any(
+                l.slot > max_inf_slot
+                and "инф час" not in l.subject.lower()
+                and "информацион" not in l.subject.lower()
+                for l in l_list
+            )
+            if has_later_lesson:
+                info_hour_middle_violations += 1
+
     # Аудит закрепленных кабинетов (room_home_match_pct)
     room_home_match_count = 0
     total_home_checkable = 0
@@ -191,6 +214,7 @@ def compute_schedule_metrics(
         "room_conflicts": room_conflicts,
         "pe_daily_slot_violations": pe_daily_slot_violations,
         "pe_split_violations": pe_split_violations,
+        "info_hour_middle_violations": info_hour_middle_violations,
         "holiday_violations": holiday_violations,
         "teacher_max_daily_pairs": teacher_max_daily_pairs,
         "room_home_match_pct": room_home_match_pct,
