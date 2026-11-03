@@ -3,7 +3,7 @@
 """
 Command-line interface for the MGKCT Timetable Optimization Engine.
 Supports solving baseline schedule, dynamic disruption rescheduling,
-and JSON serialization.
+live web scraping, Belarus public holidays, and JSON serialization.
 """
 
 import argparse
@@ -17,9 +17,10 @@ from typing import List, Dict
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-from .loader import load_curriculum_data, get_default_curriculum_path
+from .loader import load_curriculum_with_metadata, get_default_curriculum_path
 from .solver import MGKCTScheduleOptimizer
 from .models import ScheduledLesson
+from .parser import scrape_and_update_curriculum
 
 
 def export_solved_schedule(
@@ -62,6 +63,23 @@ def main():
         help="Path to export solved schedule JSON (default: data/mgkct_solved_schedule.json)",
     )
     parser.add_argument(
+        "--scrape",
+        action="store_true",
+        help="Scrape live timetable data from official college portal before solving",
+    )
+    parser.add_argument(
+        "--week-date",
+        type=str,
+        default=None,
+        help="Week start date (YYYY-MM-DD or DD.MM.YYYY) to determine Belarus public holidays",
+    )
+    parser.add_argument(
+        "--holidays",
+        type=str,
+        default=None,
+        help="Comma-separated day indices (0=Mon..5=Sat) for public holidays (e.g. '5')",
+    )
+    parser.add_argument(
         "--demo-reschedule",
         action="store_true",
         default=True,
@@ -73,13 +91,33 @@ def main():
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     export_path = args.export or os.path.join(project_root, "data", "mgkct_solved_schedule.json")
 
+    if args.scrape:
+        print("Scraping live timetable data from official college website...")
+        scrape_and_update_curriculum(output_path=curriculum_path)
+
     print(f"Loading curriculum data from: {curriculum_path}")
-    groups, rooms, items = load_curriculum_data(curriculum_path)
+    groups, rooms, items, metadata = load_curriculum_with_metadata(curriculum_path)
     print(f"Loaded: {len(groups)} groups, {len(rooms)} classrooms, {len(items)} curriculum items.")
 
-    optimizer = MGKCTScheduleOptimizer(groups, rooms, items)
+    explicit_holidays = None
+    if args.holidays:
+        explicit_holidays = [int(h.strip()) for h in args.holidays.split(",") if h.strip()]
+
+    optimizer = MGKCTScheduleOptimizer(
+        groups,
+        rooms,
+        items,
+        holidays=explicit_holidays,
+        week_start_date=args.week_date,
+        metadata=metadata,
+    )
+
     print(f"\nSolving baseline schedule (time limit: {args.time_limit}s)...")
-    sched, metrics = optimizer.solve(time_limit_sec=args.time_limit)
+    sched, metrics = optimizer.solve(
+        time_limit_sec=args.time_limit,
+        holidays=explicit_holidays,
+        week_start_date=args.week_date,
+    )
 
     print("\n=== БАЗОВОЕ ОПТИМИЗИРОВАННОЕ РАСПИСАНИЕ (35 ГРУПП) ===")
     for k, v in metrics.items():
@@ -97,6 +135,8 @@ def main():
             baseline_schedule=sched,
             sick_teachers={demo_teacher: [2, 3]},
             frozen_days=[0, 1],
+            holidays=explicit_holidays,
+            week_start_date=args.week_date,
         )
 
         print(f"\n=== ПЕРЕСТРОЕННОЕ РАСПИСАНИЕ (БОЛЕЗНЬ {demo_teacher} В СР-ЧТ) ===")

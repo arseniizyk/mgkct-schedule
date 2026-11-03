@@ -40,13 +40,19 @@ The scheduling problem is modeled as an exact Constraint Programming integer pro
    - Course 1: $\le 3$ pairs/day.
    - Courses 2–4: $\le 4$ pairs/day (Monday–Friday).
    - Saturday Cap: $\le 3$ pairs/day for all courses; pair 4 (slot 3) is strictly forbidden.
-4. **Subgroup Synchronicity**:
+4. **Physical Education Whole-Group Integrity**:
+   When physical education (`ФЗКиЗ`) is scheduled for an academic group, it must occupy the entire group simultaneously. Subgroups cannot have physical education concurrently with another subject (e.g., Foreign Language), and all PE subgroups are synchronized to the exact same slot:
+   $$x_{i_{\text{pe}}, d, s} + x_{i_{\text{non}}, d, s} \le 1, \quad \forall d, s$$
+5. **Belarus Public Holidays Absolute Ban**:
+   Lessons are strictly prohibited across all groups on official non-working public holidays of the Republic of Belarus (Decree No. 157 & Labour Code Art. 147), including dynamically calculated floating holidays (Radunitsa via astronomical Meeus algorithm):
+   $$x_{i, d, s} = 0, \quad \forall d \in \text{Holidays}, s$$
+6. **Subgroup Synchronicity**:
    When a curriculum entry requires subgroup division (e.g., Informatics and Foreign Language), both subgroup lessons are bound to identical `(day, slot)` tuples.
-5. **Teacher Uniqueness**:
+7. **Teacher Uniqueness**:
    A teacher cannot be assigned to more than one pair in any given time slot.
-6. **No Intra-Day Cross-Campus Travel**:
+8. **No Intra-Day Cross-Campus Travel**:
    Teachers assigned to both Kazintsa and Knorina campuses are strictly prohibited from teaching at both campuses within the same calendar day.
-7. **Classroom Aggregate Pool Capacity**:
+9. **Classroom Aggregate Pool Capacity**:
    Concurrent lessons in pool $r$ at campus $c$ cannot exceed the pool's room count $C_{c, r}$.
 
 ### Soft Constraints and Objective Penalties
@@ -87,6 +93,8 @@ mgkct-timetable-optimizer/
 │       ├── __init__.py        # Public package API exports
 │       ├── models.py          # Dataclasses (GroupInfo, RoomInfo, CurriculumItem, Lesson)
 │       ├── loader.py          # Curriculum data loader from data/mgkct_curriculum.json
+│       ├── holidays.py        # Belarus public holidays calendar (fixed + Meeus astronomical Radunitsa)
+│       ├── parser.py          # Live scraper for official MGKCT portal weekly timetables
 │       ├── solver.py          # Google OR-Tools CP-SAT discrete optimization core
 │       ├── allocator.py       # Two-stage classroom assignment heuristic
 │       ├── metrics.py         # Independent verification audit engine
@@ -133,6 +141,18 @@ mgkct-timetable-optimizer/
 ---
 
 ## Usage
+
+### Live Curriculum Scraper
+
+To scrape real, live weekly schedule data from the official MGKCT portal:
+
+```bash
+# Scrape current week from the official portal
+python -m mgkct_optimizer.parser data/mgkct_curriculum.json
+
+# Or scrape and immediately optimize with the solver CLI
+python -m mgkct_optimizer --scrape --time-limit 25.0
+```
 
 ### Run Optimization Solver
 
@@ -184,6 +204,9 @@ The solver includes a self-auditing metric suite executed after every run:
 | `student_windows` | **0** | Idle gaps between pairs for any group on any day |
 | `max_daily_violations` | **0** | Exceeding 3 pairs for Course 1 or 4 pairs for Courses 2–4 |
 | `cross_campus_violations` | **0** | Teacher scheduled at both Kazintsa and Knorina on the same day |
+| `pe_daily_slot_violations` | **0** | Multiple physical education slots on the same day for a group |
+| `pe_split_violations` | **0** | PE desynchronization or concurrent non-PE subject with PE |
+| `holiday_violations` | **0** | Lessons scheduled on official Republic of Belarus public holidays |
 | `subgroup_sync_violations` | **0** | Desynchronized split subgroups |
 | `first_pair_start_pct` | **$\ge$ 90.0%** | Percentage of group-days starting at pair 1 (slot 0) |
 

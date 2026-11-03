@@ -18,12 +18,14 @@ from .models import (
     BELL_SCHEDULE,
     get_required_room_type,
 )
-from .loader import load_curriculum_data, get_default_curriculum_path
+from .loader import load_curriculum_data, load_curriculum_with_metadata, get_default_curriculum_path
 from .solver import MGKCTScheduleOptimizer
 from .allocator import assign_physical_rooms
 from .metrics import compute_schedule_metrics
+from .holidays import get_belarus_holidays, is_belarus_holiday, get_week_holidays
+from .parser import scrape_and_update_curriculum, parse_schedule_html
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 __all__ = [
     "MGKCTScheduleOptimizer",
@@ -40,7 +42,13 @@ __all__ = [
     "BELL_SCHEDULE",
     "get_required_room_type",
     "load_curriculum_data",
+    "load_curriculum_with_metadata",
     "get_default_curriculum_path",
     "assign_physical_rooms",
     "compute_schedule_metrics",
+    "get_belarus_holidays",
+    "is_belarus_holiday",
+    "get_week_holidays",
+    "scrape_and_update_curriculum",
+    "parse_schedule_html",
 ]

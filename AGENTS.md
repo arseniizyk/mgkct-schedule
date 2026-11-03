@@ -38,23 +38,31 @@ The college operates across two detached geographic campuses in Minsk:
 Groups marked with OPFR (`ОПФР`: `101ТП`, `109ТП`, `93МНЭ`, `94ТП`, `169ТП`, `167ТП`, `168МНЭ`) have specialized inclusive education tracks at the Knorina campus.
 - **Undivided Cohorts**: OPFR groups comprise 6–12 students and **never split into subgroups** (`subgroup == 0`), even for computer laboratory classes.
 
-#### Academic Shifts
-- **Shift 1 (Morning Shift)**: 24 groups. Academic classes deterministically start at Pair 1 (Slot 0) on weekdays, ensuring $\ge 95\%$ first pair start rate.
-- **Shift 2 (Afternoon Shift)**: 11 upper-course groups (`79ТЭ`, `84МНЭ`, `93МНЭ`, `168МНЭ`, `90МНЭ`, `91МНЭ`, `85М`, `81ТП`, `82ТП`, `83МНЭ`, `88ТП`).
-  - **17-Pair Afternoon Ceiling**: In a 5-slot grid (`MAX_SLOTS = 5`, slots 0..4) with Saturday slot 4 prohibited (max 2 pairs starting slot $\ge 2$) and weekday daily capacity of 3 pairs (slots 2..4), the theoretical maximum weekly volume starting at slot $\ge 2$ across all days is $5 \times 3 + 2 = \mathbf{17 \text{ pairs}}$.
-  - **Standard Load Groups ($\le 17$ pairs)**: Academic classes start strictly at Pair 3 (Slot 2) or later on weekdays ($d < 5$). Slots 0 and 1 are hard-prohibited.
-  - **Heavy Upper-Course Groups ($> 17$ pairs)**: Four groups (`82ТП` [18], `84МНЭ` [18], `88ТП` [19], `90МНЭ` [20]) have loads exceeding 17 pairs. To prevent infeasibility, slot 0 is strictly prohibited on weekdays, while starting at Pair 2 (Slot 1) is permitted on at most 2 weekdays per week and is soft-penalized (+400).
+#### Campus Days and Whitelist of Hybrid Groups
+While groups are primarily based at their home campus, specific groups have scheduled whole-day campus visit days ("выездные дни") to access specialized laboratories and faculty without intra-day travel:
+- `107ТЭ`: Visits Kazintsa every Wednesday (day 2) and Friday (day 4); attends Knorina on Mon, Tue, Thu, Sat.
+- `108ТЭ`: Visits Kazintsa every Tuesday (day 1) and Thursday (day 3); attends Knorina on Mon, Wed, Fri, Sat.
+- `167ТП`: OPFR group permanently studying at Knorina (room `Кн.1-109`).
+- **Zero Intra-Day Travel Invariant**: Neither students nor teachers ever travel between campuses within the same calendar day. Every campus visit encompasses the entire academic day.
+
+#### Unified Academic Schedule (No Shifts)
+The college operates on a single unified academic schedule starting at 09:00:
+- **No Division into Shifts**: All 35 academic groups start deterministically at Pair 1 (Slot 0, 09:00) on weekdays, ensuring a 100% first pair start rate across both campuses.
+- **Compact Mornings**: Upper-course groups and first-year groups alike attend classes starting from Pair 1 without afternoon shift delays.
 
 ---
 
 ### 2.2 Time Grid and Bell Schedule
 
-The college operates on an extended 7-slot daily grid (`0..6`), where slots 0..4 cover academic classes and slots 5..6 support external/evening vocational practice:
-- **Academic Grid**: 5 slots per day (`0..4`, Pairs 1 through 5).
-- **Practice Shift Grid**: Slots 5..6 (Pairs 6..7) dedicated to vocational practice blocks (`Техн практика`, `Уч. пр. квалиф`).
-- **Bell Times (Academic Grid)**:
-  - **Казинца**: Slot 0 (08:00–09:40), Slot 1 (09:50–11:30), Slot 2 (11:50–13:30), Slot 3 (13:40–15:20), Slot 4 (15:30–17:00).
-  - **Кнорина**: Slot 0 (09:00–10:40), Slot 1 (10:50–12:40), Slot 2 (13:00–14:40), Slot 3 (14:50–16:30), Slot 4 (16:40–18:10).
+The college operates on a unified bell schedule starting at 09:00 across all campuses:
+- **Academic Grid**: Slots 0..4 (Pairs 1 through 5).
+- **Bell Schedule (Official)**:
+  - **1-я пара**: `09:00–10:40` (09:00 - 09:45 | 09:55 - 10:40)
+  - **2-я пара**: `10:50–12:40` (10:50 - 11:35 | 11:55 - 12:40)
+  - **3-я пара**: `13:00–14:40` (13:00 - 13:45 | 13:55 - 14:40)
+  - **4-я пара**: `14:50–16:30` (14:50 - 15:35 | 15:45 - 16:30)
+  - **5-я пара**: `16:40–18:20` (16:40 - 17:25 | 17:35 - 18:20)
+  - **6-я пара**: `18:30–20:10` (18:30 - 19:15 | 19:25 - 20:10)
 
 ---
 
@@ -81,19 +89,25 @@ All agents modifying optimization logic must preserve the division between Hard 
 1. **Curriculum Volume Compliance**:
    $$\sum_{d=0}^{5} \sum_{s=0}^{4} x_{i, d, s} = \text{weekly\_pairs}_i$$
    *(Under teacher illness, target volume is reduced by the number of lessons scheduled on sick days).*
-2. **Daily Lesson Limits**:
-   - Course 1: $\le 4$ pairs per day (Monday–Friday).
-   - Courses 2–4: $\le 5$ pairs per day (Monday–Friday).
-   - Saturday Cap: $\le 4$ pairs for all groups; slot 4 (5th pair) is prohibited on Saturday.
+2. **Daily Lesson Limits & Subgroup Cap**:
+   - Course 1: $\le 4$ pairs per day (Monday–Friday), strictly starting at Pair 1 (Slot 0, 09:00).
+   - Courses 2–4: $\le 4$ academic pairs per day for any subgroup and group ($\le 5$ total only on the day of Informational Hour). Groups can study up to Pair 5 (Slot 4, 16:40–18:20) by starting at Pair 2 (Slot 1, 10:50, slots 1..4), strictly forbidding studying 1st through 5th pair in a single day.
+   - Saturday Cap: $\le 3$ pairs for all groups; slots 3 and 4 (4th and 5th pairs) are prohibited on Saturday.
+   - Teachers: $\le 5$ pairs per day across all courses and campuses.
 3. **No Student Gaps ("Окна") at Group and Subgroup Levels**:
    Lessons for any group AND for every individual subgroup ($k \in \{1, 2, 3\}$) in a single day must form a strictly contiguous sequence without idle slots:
    $$\text{act}_{g, k, d, s} = \sum_{i \in \text{Items}(g, \text{subgroup} \in \{0, k\})} x_{i, d, s} \le 1$$
    $$\text{start}_{g, k, d, s} \ge \text{act}_{g, k, d, s} - \text{act}_{g, k, d, s-1}$$
    $$\sum_{s=0}^{4} \text{start}_{g, k, d, s} \le 1, \quad \forall g, k, d$$
-4. **Physical Education Single-Slot Bound**:
-   A group cannot have physical education (`ФЗКиЗ`) scheduled across multiple time slots on the same day:
-   $$\text{pe\_slot}_{g, d, s} \ge x_{i, d, s}, \quad \forall i \in \text{Items}(g, \text{PE})$$
-   $$\sum_{s=0}^{4} \text{pe\_slot}_{g, d, s} \le 1, \quad \forall g, d$$
+4. **Physical Education Whole-Group Integrity & Single-Slot Bound**:
+   When physical education (`ФЗКиЗ`) is scheduled for a group $g$, it must occupy the entire group simultaneously. No scenario is permitted where one or two subgroups have PE while another subgroup has a different subject:
+   - All PE subgroups of group $g$ are bound to identical time slots:
+     $$x_{i_{\text{pe}, 1}, d, s} = x_{i_{\text{pe}, k}, d, s}, \quad \forall k > 1$$
+   - Non-PE subjects for any subgroup of group $g$ cannot occur in a slot where PE is scheduled:
+     $$x_{i_{\text{pe}}, d, s} + x_{i_{\text{non}}, d, s} \le 1, \quad \forall i_{\text{non}} \in \text{Items}(g, \text{non-PE}), \forall d, s$$
+   - A group cannot have physical education scheduled across multiple time slots on the same day:
+     $$\text{pe\_slot}_{g, d, s} \ge x_{i, d, s}, \quad \forall i \in \text{Items}(g, \text{PE})$$
+     $$\sum_{s=0}^{4} \text{pe\_slot}_{g, d, s} \le 1, \quad \forall g, d$$
 5. **OPFR Cohort Integrity**:
    All curriculum items for OPFR groups must maintain $\text{subgroup} = 0$.
 6. **Teacher Uniqueness**:
@@ -106,15 +120,15 @@ All agents modifying optimization logic must preserve the division between Hard 
    For each campus $c$ and room type $r$, total concurrent lessons cannot exceed room count $C_{c, r}$:
    $$\sum_{i \in \text{Pool}(c, r)} x_{i, d, s} \le C_{c, r}, \quad \forall c, r, d, s$$
    No artificial capacity inflation hacks are permitted (`room_conflicts == 0`).
-9. **Shift-Specific Start Boundaries**:
-   - **Shift 1 Deterministic Morning Start**: On weekdays ($d < 5$), Shift 1 groups strictly start at Pair 1 (Slot 0):
-     $$\text{act}_{g, d, 0} = \text{day\_has\_les}_{g, d}, \quad \text{start}_{g, d, s} = 0, \quad \forall d < 5, s \ge 1$$
-     On Saturday ($d = 5$), starting at slots 2..4 is prohibited ($\text{start}_{g, 5, s} = 0, \forall s \ge 2$), with soft penalties on slot 1 start, guaranteeing $\ge 95.0\%$ overall first pair starts.
-   - **Shift 2 ($\le 17$ pairs)**: Prohibited from using morning slots 0 and 1 on weekdays:
-     $$\text{act}_{g, d, 0} = 0, \quad \text{act}_{g, d, 1} = 0, \quad \forall d < 5$$
-   - **Shift 2 ($> 17$ pairs)**: Prohibited from using slot 0 on weekdays, and bounded to at most 2 slot 1 starts on weekdays:
-     $$\text{act}_{g, d, 0} = 0, \quad \forall d < 5$$
-     $$\sum_{d=0}^{4} \text{start}_{g, d, 1} \le 2$$
+9. **Morning Start & Late Pair Scheduling**:
+   - On weekdays ($d < 5$), Course 1 groups strictly start at Pair 1 (Slot 0, 09:00).
+   - Courses 2–4 preferentially start at Pair 1 (Slot 0); when scheduled up to Pair 5 (Slot 4), they start at Pair 2 (Slot 1) to respect the $\le 4$ daily pair cap (never studying 1st through 5th pair). Starting at slots 2..4 on weekdays is prohibited.
+   - On Saturday ($d = 5$), starting at slots 2..4 is prohibited ($\text{start}_{g, 5, s} = 0, \forall s \ge 2$), with soft penalties guiding groups to compact early finishes.
+10. **Belarus Public Holidays Absolute Ban**:
+    For any calendar day $d$ recognized as an official non-working public holiday of the Republic of Belarus (Decree of the President No. 157 & Labour Code Art. 147: 1-2 Jan, 7 Jan, 8 Mar, Radunitsa, 1 May, 9 May, 3 Jul, 7 Nov, 25 Dec), student lessons are strictly prohibited across all groups and slots:
+    $$x_{i, d, s} = 0, \quad \forall i, s$$
+    $$\text{act}_{g, d, s} = 0, \quad \forall g, s$$
+    The engine computes both fixed secular/religious holidays and the floating Easter-derived Radunitsa using the astronomical Meeus algorithm.
 
 ---
 
@@ -124,11 +138,11 @@ The objective function minimizes $\sum \text{penalties}$:
 
 | Rule | Mathematical Mechanism | Weight / Penalty | Rationale |
 | :--- | :--- | :---: | :--- |
-| **Shift 1 Saturday Early Start** | $(\text{day\_has\_les}_{g, 5} - \text{act}_{g, 5, 0}) \times 1500 + \text{start}_{g, 5, 1} \times 800$ | 800 / 1500 | Guides Saturday morning shift groups to slot 0. |
-| **Shift 2 Afternoon Preference** | Penalty on slot 1 start for heavy groups (+400); Saturday morning (+300, +100); start $> 2$ ($60 \times (s-2)$) | 60 to 400 | Directs 2nd shift to start at 3rd pair (slot 2) or later. |
-| **Teacher Windows Penalty** | $\text{extra\_starts}_{t, d} \times 80$ | 80 | Minimizes idle windows in faculty daily schedules. |
+| **Saturday Early Start & 5-Day Week** | $(\text{day\_has\_les}_{g, 5} - \text{act}_{g, 5, 0}) \times 1500 + \text{start}_{g, 5, 1} \times 800 + \text{day\_has\_les}_{g, 5} \times 350$ | 350 / 800 / 1500 | Guides Saturday to slot 0 and incentivizes 5-day week when load permits. |
+| **Teacher Windows Penalty** | $\text{extra\_starts}_{t, d} \times 1200$ | 1200 | Strong penalty practically eliminating idle windows in faculty daily schedules. |
 | **Late Slot Weight** | $\text{active}_{g, d, s} \times W_s$, where $W = [0, 2, 6, 18, 40]$ | 2 to 40 | Prioritizes compact days and early completion. |
-| **Saturday Relief** | Additional penalty on slot 3 (+40), slot 2 (+20), slot 1 (+5) | 5 to 40 | Promotes early release on Saturdays without hard prohibition. |
+| **Saturday Relief** | Additional penalty on slot 2 (+20), slot 1 (+5); slots 3 and 4 prohibited | 5 to 20 | Promotes early release on Saturdays with strict 3-pair cap. |
+| **Information Hour Placement** | Slots 0, 1 penalized (+1000); non-Thu/Fri penalized (+200) | 200 / 1000 | Places formal curator hours at end of day, preferentially on Thu/Fri. |
 | **Duplicate Subject Limit** | $\text{max}(0, \sum_s x_{i, d, s} - 1) \times 60$ (Exempt: `ЛР`, `Пр-ка`, `КП`) | 60 | Discourages duplicate lectures; permits 2-hour lab/practice blocks. |
 | **Subgroup Synchronicity** | $\lvert x_{i1, d, s} - x_{i2, d, s} \rvert \times W_{\text{sync}}$ (Exempt: sets where teachers are identical, avoiding deadweight penalty) | 60 / 120 | Encourages simultaneous labs while permitting sequential single-teacher teaching. |
 | **Lecture-before-Lab Order** | Penalize lab on day 0 when lecture exists for subject | 10 | Promotes theoretical foundation before practical work. |
@@ -167,6 +181,8 @@ mgkct-timetable-optimizer/
 │       ├── __init__.py        # Public package API exports
 │       ├── models.py          # Dataclasses (GroupInfo, RoomInfo, CurriculumItem, Lesson, MAX_SLOTS=5)
 │       ├── loader.py          # Curriculum data loader with OPFR and shift metadata
+│       ├── holidays.py        # Belarus public holidays calendar (fixed + Meeus astronomical Radunitsa)
+│       ├── parser.py          # Live scraper for official MGKCT portal weekly timetables
 │       ├── solver.py          # Google OR-Tools CP-SAT discrete optimization core
 │       ├── allocator.py       # Prioritized bipartite matching room allocator
 │       ├── metrics.py         # Independent verification audit engine

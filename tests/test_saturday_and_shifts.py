@@ -163,5 +163,9 @@ def main():
     print(f"Target 3 (Shift 2 Start): slot >= 2 achieved in {shift2_res['slot2_plus_pct']}% of group-days, early starts in {shift2_res['early_pct']}% of group-days")
 
 
+def test_saturday_and_shifts():
+    main()
+
+
 if __name__ == "__main__":
     main()

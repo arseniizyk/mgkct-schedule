@@ -8,12 +8,10 @@ Reads structured data from data/mgkct_curriculum.json with hardcoded fallback.
 import json
 import os
 from typing import List, Tuple, Optional
-from .models import GroupInfo, RoomInfo, CurriculumItem
+from .models import GroupInfo, RoomInfo, CurriculumItem, normalize_room_name
 
 
-AFTERNOON_SHIFT_GROUPS = {
-    "79ТЭ", "84МНЭ", "93МНЭ", "168МНЭ", "90МНЭ", "91МНЭ", "85М", "81ТП", "82ТП", "83МНЭ", "88ТП"
-}
+AFTERNOON_SHIFT_GROUPS = set()
 OPFR_GROUPS = {"101ТП", "109ТП", "93МНЭ", "94ТП", "169ТП", "167ТП", "168МНЭ"}
 
 
@@ -50,14 +48,30 @@ def load_curriculum_data(
                 campus=g["campus"],
                 max_daily_pairs=g["max_daily_pairs"],
                 is_opfr=g.get("is_opfr", g["name"] in OPFR_GROUPS),
-                shift=g.get("shift", 2 if g["name"] in AFTERNOON_SHIFT_GROUPS else 1),
+                shift=1,
             )
             for g in data["groups"]
         ]
-        rooms = [
-            RoomInfo(name=r["name"], campus=r["campus"], room_type=r["room_type"])
+        rooms_list = [
+            RoomInfo(
+                name=normalize_room_name(r["name"]),
+                campus=r["campus"],
+                room_type=r["room_type"],
+            )
             for r in data["rooms"]
         ]
+        # Ensure rooms discovered from live export are included
+        existing_rooms = {(r.campus, r.name) for r in rooms_list}
+        extra_rooms = [
+            RoomInfo(name="Кн.1-204 маст", campus="Кнорина", room_type="маст"),
+            RoomInfo(name="Кн.2-417 маст", campus="Кнорина", room_type="маст"),
+            RoomInfo(name="402", campus="Казинца", room_type="лек"),
+        ]
+        for er in extra_rooms:
+            if (er.campus, er.name) not in existing_rooms:
+                rooms_list.append(er)
+                existing_rooms.add((er.campus, er.name))
+
         items = [
             CurriculumItem(
                 item_id=it["item_id"],
@@ -68,7 +82,7 @@ def load_curriculum_data(
                 weekly_pairs=it["weekly_pairs"],
                 subgroup=0 if it["group"] in OPFR_GROUPS else it.get("subgroup", 0),
                 paired_id=None if it["group"] in OPFR_GROUPS else it.get("paired_id"),
-                home_rooms=it.get("home_rooms", []),
+                home_rooms=[normalize_room_name(hr) for hr in it.get("home_rooms", [])],
                 is_double_pair_ok=it.get(
                     "is_double_pair_ok",
                     it.get("lesson_type") in ("ЛР", "Пр-ка", "КП") or "ФЗКиЗ" in it.get("subject", "")
@@ -77,7 +91,22 @@ def load_curriculum_data(
             for it in data["curriculum_items"]
             if it.get("weekly_pairs", 0) > 0
         ]
-        return groups, rooms, items
+        return groups, rooms_list, items
+
+
+def load_curriculum_with_metadata(
+    json_path: Optional[str] = None,
+) -> Tuple[List[GroupInfo], List[RoomInfo], List[CurriculumItem], dict]:
+    """Loads groups, classrooms, curriculum items, and full dataset metadata."""
+    path = json_path or get_default_curriculum_path()
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        groups, rooms, items = load_curriculum_data(json_path)
+        metadata = data.get("metadata", {})
+        return groups, rooms, items, metadata
+    groups, rooms, items = load_curriculum_data(json_path)
+    return groups, rooms, items, {}
 
     # Fallback minimal catalog
     groups = [

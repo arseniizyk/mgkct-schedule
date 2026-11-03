@@ -159,5 +159,9 @@ def main():
         sys.exit(1)
 
 
+def test_disruptions():
+    main()
+
+
 if __name__ == "__main__":
     main()

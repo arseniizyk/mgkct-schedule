@@ -15,20 +15,50 @@ MAX_SLOTS = 5  # Slots 0..4 (1st..5th academic pairs; resolves Pigeonhole bottle
 CAMPUSES = ["Казинца", "Кнорина"]
 ROOM_TYPES = ["лек", "комп", "маст", "спец_лаб", "спорт"]
 
+
+def normalize_room_name(name: str) -> str:
+    """Normalizes classroom identifiers, removing misleading suffixes and unifying whitespace/prefixes."""
+    if not name or name == "-":
+        return "-"
+    s = name.strip()
+    for tag in ["(к)", "(лаб)", " (к)", " (лаб)"]:
+        s = s.replace(tag, "")
+    s = s.strip()
+    if s.startswith("Кн ") or s.startswith("Кн  "):
+        s = "Кн." + s[3:].strip()
+    return " ".join(s.split())
+
+
+def get_group_campus_for_day(group_name: str, day: int, base_campus: str = "") -> str:
+    """
+    Returns the physical campus of a group for a specific day (0=Mon..5=Sat).
+    Enforces agreed whitelist of hybrid groups:
+    - 107ТЭ: Казинца on Wed (2) and Fri (4); Кнорина on Mon, Tue, Thu, Sat.
+    - 108ТЭ: Казинца on Tue (1) and Thu (3); Кнорина on Mon, Wed, Fri, Sat.
+    - All other groups strictly remain at their base campus.
+    """
+    if group_name == "107ТЭ":
+        return "Казинца" if day in (2, 4) else "Кнорина"
+    if group_name == "108ТЭ":
+        return "Казинца" if day in (1, 3) else "Кнорина"
+    return base_campus or "Казинца"
+
 BELL_SCHEDULE: Dict[str, Dict[int, str]] = {
     "Казинца": {
-        0: "08:00–09:40",
-        1: "09:50–11:30",
-        2: "11:50–13:30",
-        3: "13:40–15:20",
-        4: "15:30–17:00",
+        0: "09:00–10:40",
+        1: "10:50–12:40",
+        2: "13:00–14:40",
+        3: "14:50–16:30",
+        4: "16:40–18:20",
+        5: "18:30–20:10",
     },
     "Кнорина": {
         0: "09:00–10:40",
         1: "10:50–12:40",
         2: "13:00–14:40",
         3: "14:50–16:30",
-        4: "16:40–18:10",
+        4: "16:40–18:20",
+        5: "18:30–20:10",
     },
 }
 

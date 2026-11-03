@@ -15,6 +15,7 @@ def compute_schedule_metrics(
     groups: Dict[str, GroupInfo],
     baseline_schedule: Optional[List[ScheduledLesson]] = None,
     items: Optional[List] = None,
+    holidays: Optional[List[int]] = None,
 ) -> Dict:
     """Computes comprehensive audit metrics for an academic schedule."""
     by_group_day: Dict[Tuple[str, int], Set[int]] = defaultdict(set)
@@ -25,10 +26,15 @@ def compute_schedule_metrics(
     slot4_count = 0
     sat_pairs_group: Dict[str, Set[int]] = defaultdict(set)
 
+    by_group_day_academic: Dict[Tuple[str, int], Set[int]] = defaultdict(set)
+
     for les in schedule:
         by_group_day[(les.group, les.day)].add(les.slot)
         by_teacher_day[(les.teacher, les.day)].add(les.slot)
-        teacher_campuses_day[(les.teacher, les.day)].add(les.campus)
+        if "инф час" not in les.subject.lower():
+            by_group_day_academic[(les.group, les.day)].add(les.slot)
+            if les.room != "-":
+                teacher_campuses_day[(les.teacher, les.day)].add(les.campus)
         if les.slot >= 4:
             slot5_count += 1
         if les.slot == 3:
@@ -83,8 +89,9 @@ def compute_schedule_metrics(
         windows = (max_s - min_s + 1) - len(slots)
         student_windows += windows
 
-        day_limit = min(g_info.max_daily_pairs, 4) if d == 5 else (g_info.max_daily_pairs if g_info else 5)
-        if len(slots) > day_limit:
+        acad_slots = by_group_day_academic.get((g_name, d), set())
+        acad_limit = 3 if d == 5 else 4
+        if len(acad_slots) > acad_limit:
             max_daily_violations += 1
 
     for (g_name, sub_k, d), slots in by_subgroup_day.items():
@@ -107,7 +114,7 @@ def compute_schedule_metrics(
     # Аудит наложений аудиторий (room_conflicts): неспортивные помещения должны быть уникальны
     room_occ: Dict[Tuple[str, str, int, int], List[ScheduledLesson]] = defaultdict(list)
     for les in schedule:
-        if "спорт" not in les.room.lower():
+        if "спорт" not in les.room.lower() and les.room != "-":
             room_occ[(les.campus, les.room, les.day, les.slot)].append(les)
     room_conflicts = sum(len(v) - 1 for v in room_occ.values() if len(v) > 1)
 
@@ -117,6 +124,41 @@ def compute_schedule_metrics(
         if "ФЗКиЗ" in les.subject or les.lesson_type == "ФЗКиЗ":
             pe_slots_group_day[(les.group, les.day)].add(les.slot)
     pe_daily_slot_violations = sum(1 for slots in pe_slots_group_day.values() if len(slots) > 1)
+
+    # Аудит целостности физкультуры (ФЗКиЗ):
+    # 1. Запрещено совмещение ФЗКиЗ с другими предметами группы в одном слоте
+    # 2. Все подгруппы ФЗКиЗ группы должны заниматься строго в одном слоте
+    by_group_day_slot: Dict[Tuple[str, int, int], List[ScheduledLesson]] = defaultdict(list)
+    for les in schedule:
+        by_group_day_slot[(les.group, les.day, les.slot)].append(les)
+
+    pe_split_violations = 0
+    group_pe_subs_count = defaultdict(set)
+    if items:
+        for it in items:
+            if "ФЗКиЗ" in getattr(it, "subject", "") or getattr(it, "lesson_type", "") == "ФЗКиЗ":
+                if getattr(it, "subgroup", 0) > 0:
+                    group_pe_subs_count[it.group].add(it.subgroup)
+
+    for (g_name, d, s), l_list in by_group_day_slot.items():
+        has_pe = any("ФЗКиЗ" in l.subject or l.lesson_type == "ФЗКиЗ" for l in l_list)
+        if has_pe:
+            has_non_pe = any("ФЗКиЗ" not in l.subject and l.lesson_type != "ФЗКиЗ" for l in l_list)
+            if has_non_pe:
+                pe_split_violations += 1
+            expected_subs = group_pe_subs_count.get(g_name, set())
+            if len(expected_subs) >= 2:
+                present_pe_subs = {
+                    l.subgroup
+                    for l in l_list
+                    if ("ФЗКиЗ" in l.subject or l.lesson_type == "ФЗКиЗ") and l.subgroup > 0
+                }
+                if present_pe_subs != expected_subs:
+                    pe_split_violations += 1
+
+    # Аудит государственных праздников
+    holidays_set = set(holidays or [])
+    holiday_violations = sum(1 for les in schedule if les.day in holidays_set)
 
     # Аудит закрепленных кабинетов (room_home_match_pct)
     room_home_match_count = 0
@@ -148,6 +190,8 @@ def compute_schedule_metrics(
         "cross_campus_violations": cross_campus_violations,
         "room_conflicts": room_conflicts,
         "pe_daily_slot_violations": pe_daily_slot_violations,
+        "pe_split_violations": pe_split_violations,
+        "holiday_violations": holiday_violations,
         "teacher_max_daily_pairs": teacher_max_daily_pairs,
         "room_home_match_pct": room_home_match_pct,
         "first_pair_start_pct": shift1_start_pct,

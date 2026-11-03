@@ -130,5 +130,9 @@ def main():
     print("=" * 70)
 
 
+def test_disruption_adversarial():
+    main()
+
+
 if __name__ == "__main__":
     main()
