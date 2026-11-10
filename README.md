@@ -1,126 +1,233 @@
-# MGKCT Timetable Optimization Engine
+# Движок оптимизации расписания МГКЦТ
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![OR-Tools](https://img.shields.io/badge/solver-Google%20OR--Tools%20CP--SAT-red?style=flat)](https://developers.google.com/optimization/cp/cp_solver)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat)](LICENSE)
 [![Format](https://img.shields.io/badge/code%20style-PEP%208-informational?style=flat)](https://peps.python.org/pep-0008/)
 
-Discrete optimization engine and dynamic disruption rescheduling system for the Minsk State College of Digital Technologies (МГКЦТ), powered by Google OR-Tools CP-SAT solver.
+Система дискретной оптимизации и динамического перестроения расписания для Минского государственного колледжа цифровых технологий (МГКЦТ), работающая на базе солвера Google OR-Tools CP-SAT.
 
 ---
 
-## Overview
+## Обзор проекта
 
-The engine formulates and solves a high-dimensional Constraint Satisfaction Problem (CSP) to construct optimal weekly academic timetables for 35 student groups distributed across two physically separated campuses in Minsk. It guarantees physical feasibility, eliminates student idle periods ("окна"), enforces pedagogical load distribution, and provides dynamic re-optimization capabilities under operational disruptions (e.g., teacher illness, emergency cancellations) using the Minimal Perturbation principle.
+Система формулирует и решает многомерную задачу удовлетворения ограничений (Constraint Satisfaction Problem, CSP) для построения оптимального недельного академического расписания для 35 учебных групп, распределенных между двумя удаленными корпусами в Минске. Движок гарантирует физическую выполнимость, полностью устраняет «окна» у студентов, обеспечивает равномерное распределение педагогической нагрузки и предоставляет возможности динамического перестроения сетки при сбоях (болезнь преподавателя, экстренные отмены) по принципу минимального возмущения (Minimal Perturbation).
 
-### Operational Context
+### Операционные параметры
 
-| Dimension | Specification |
+| Параметр | Характеристика |
 | :--- | :--- |
-| **Campuses** | 2 detached sites: ул. Казинца, 91 (20 groups) and ул. Кнорина, 14 (15 groups) |
-| **Academic Groups** | 35 groups (Courses 1 through 4, including specialized ОПФР inclusion streams) |
-| **Time Grid** | 6 academic days (Monday = 0 to Saturday = 5), 4 pairs per day (slots 0..3) |
-| **Daily Shift** | 1st shift only (2nd shift / slots 5–7 eliminated to ensure early student departure) |
-| **Classroom Pools** | 3 non-interchangeable categories per campus: `лек` (lecture), `комп` (computer lab), `спорт` (gymnasium) |
+| **Корпуса** | 2 территориально удаленных кампуса: ул. Казинца, 91 (20 групп) и ул. Кнорина, 14 (15 групп) |
+| **Учебные группы** | 35 групп (1–4 курсы, включая специализированные инклюзивные потоки ОПФР) |
+| **Временная сетка** | 6 учебных дней (Пн = 0 .. Сб = 5), до 5 пар в день (слоты 0..4, 09:00–18:20) |
+| **Сменность** | Единое академическое утро: начало с 1-й пары (09:00), компактное завершение дня |
+| **Пулы аудиторий** | 5 специализированных категорий на каждом корпусе: `лек`, `комп`, `маст`, `спец_лаб`, `спорт` |
 
 ---
 
-## Mathematical Model Architecture
+## 🏛️ Институциональные проблемы: почему составление расписания — это кризис?
 
-The scheduling problem is modeled as an exact Constraint Programming integer problem evaluated by the CP-SAT solver.
+Составление расписания в МГКЦТ вручную или примитивными эвристиками регулярно приводит к недовольству студентов, преподавателей и администрации. Ниже приведен детальный анализ объективных причин: инфраструктурных дефицитов, природы появления 5-х пар и факторов, превращающих расписание в кошмар для обеих сторон.
 
-### Hard Constraints (Feasibility Boundary)
+### 1. Чего остро не хватает колледжу (системные дефициты)
 
-1. **Curriculum Volume Compliance**:
-   Every group must receive exactly the required number of weekly pairs defined by official RIPO curriculum plans.
-2. **Student Gap Elimination ("Окна")**:
-   For any academic group on any day, all assigned lessons form a strictly contiguous time block:
-   $$\sum_{s=0}^{3} \text{start}_{g, d, s} \le 1, \quad \forall g, d$$
-3. **Daily Lesson Limits**:
-   - Course 1: $\le 3$ pairs/day.
-   - Courses 2–4: $\le 4$ pairs/day (Monday–Friday).
-   - Saturday Cap: $\le 3$ pairs/day for all courses; pair 4 (slot 3) is strictly forbidden.
-4. **Physical Education Whole-Group Integrity**:
-   When physical education (`ФЗКиЗ`) is scheduled for an academic group, it must occupy the entire group simultaneously. Subgroups cannot have physical education concurrently with another subject (e.g., Foreign Language), and all PE subgroups are synchronized to the exact same slot:
+1. **Критический дефицит компьютерных классов (IT-бутылочное горлышко на Казинца)**:
+   - Колледж готовит специалистов по разработке ПО, микроэлектронике и мобильным сетям, что требует огромного объема практических и лабораторных работ.
+   - Потребность групп корпуса Казинца по учебным планам составляет **284 пары в неделю** в компьютерных классах (`комп`).
+   - При этом на корпусе физически функционирует всего **12 компьютерных классов** (`2-105`, `2-206`, `3-103 к`, `3-111`, `3-202`, `3-205`, `3-208`, `3-212`, `401`, `501`, `503`, `504`).
+   - **Математический тупик Дирихле (Pigeonhole Principle)**: если пытаться уложить занятия в стандартные 4 пары в день (5 дней × 4 пары + 3 в субботу = 23 слота), то максимальная пропускная способность составит:
+     $$12 \text{ классов} \times 23 \text{ слота} = 276 \text{ пар}$$
+     Дефицит составляет минимум **8 пар в неделю**. Без 5-х пар расписание IT-дисциплин **физически невозможно составить** без двойных бронирований аудиторий или отмены занятий.
+
+2. **Нехватка специализированных учебно-производственных мастерских (`маст`) на Кнорина**:
+   - Мастерские радиомонтажа, слесарно-механических и электромонтажных работ (`Кн.2-011 маст`, `Кн.2-323 маст`, `Кн.2-413 маст`, `Кн.2-417 маст`) имеют жестко ограниченную вместимость (12–15 специализированных рабочих мест с оборудованием и вытяжками).
+   - Академические группы из 25–30 человек невозможно обучать одновременно, что вынуждает дробить занятия и растягивать график.
+
+3. **Географический разрыв двух корпусов и логистический тупик**:
+   - Колледж разделен на два удаленных кампуса: **ул. Казинца, 91** (Курасовщина) и **ул. Кнорина, 14** (Зеленый Луг / Восток). Расстояние между ними — более **15 км** (1–1.5 часа на городском транспорте с пересадками).
+   - Значительная часть преподавателей ведет дисциплины на обоих корпусах.
+   - Действует строгое физическое ограничение: **преподаватель не может перемещаться между корпусами внутри одного рабочего дня** (Zero Intra-Day Travel). Это дробит доступность преподавателя: если педагог назначен на день на Кнорина, корпус Казинца полностью лишается его ресурса на весь день.
+
+4. **Дефицит профильных преподавателей-предметников и последовательное ведение подгрупп**:
+   - По учебному плану лабораторные работы по спецпредметам и программированию требуют деления на 2 подгруппы.
+   - В идеале две подгруппы должны заниматься синхронно у двух разных преподавателей в двух лабораториях.
+   - Из-за нехватки кадров обе подгруппы зачастую ведет **один и тот же преподаватель последовательно** (сначала 1-я подгруппа, затем 2-я подгруппа). Это удваивает время занятости преподавателя на группу и искусственно растягивает учебный день студентов.
+
+5. **Специфика инклюзивных групп ОПФР**:
+   - 7 специализированных групп (`101ТП`, `109ТП`, `93МНЭ`, `94ТП`, `169ТП`, `167ТП`, `168МНЭ`) обучаются на корпусе Кнорина.
+   - Они занимаются неделимым составом (без деления на подгруппы) и требуют стабильных закрепленных аудиторий без постоянной беготни между этажами и корпусами.
+
+6. **Межкорпусные «выездные дни» (Hybrid Groups)**:
+   - Группы `107ТЭ` и `108ТЭ` базируются на Кнорина, но по утвержденным дням целиком выезжают на Казинца для доступа к лабораторной базе радиоэлектроники. В эти дни они создают дополнительную пиковую нагрузку на уже перегруженный фонд Казинца.
+
+---
+
+### 2. Почему ставятся 5-е пары (слот 4, 16:40–18:20)?
+
+Пятые пары не являются прихотью составителей расписания — это результат жестких физических и нормативных ограничений:
+
+1. **Единственный способ обойти принцип Дирихле**:
+   - Расширение учебной сетки до 5 пар (слоты 0..4) увеличивает доступное количество слотов в неделю до 28 (5 дней × 5 пар + 3 в сб).
+   - Пропускная способность 12 компьютерных классов возрастает до:
+     $$12 \times 28 = 336 \text{ пар в неделю}$$
+     Это с запасом покрывает требуемые 284 пары и гарантирует **строго 0 конфликтов аудиторий (`room_conflicts == 0`)**. Без 5-х пар колледжу пришлось бы либо сокращать часы программирования, либо усаживать по 2–3 студента за один компьютер.
+
+2. **Нормативный объем учебного плана + Кураторский/Информационный час**:
+   - Учебная программа старших курсов предусматривает до 20 пар в неделю (по 4 пары в день при 5-дневной учебной неделе).
+   - При добавлении еженедельного информационного / кураторского часа (`Инф час`) суммарная дневная нагрузка в один из дней неизбежно достигает 5 пар.
+   - По регламенту колледжа информационный час обязан стоять **в самом конце учебного дня группы**, чтобы не разрывать академический процесс окнами. Следовательно, в день с 4 основными парами и инф. часом занятие неизбежно попадает на 5-ю пару (16:40–18:20).
+
+3. **Очереди к общим преподавателям и деление на подгруппы**:
+   - Когда один преподаватель закреплен за несколькими группами разных курсов, их невозможно поставить одновременно в «удобные» утренние слоты. Образуется временная очередь, сдвигающая часть пар на вечер.
+
+---
+
+### 3. Почему традиционное расписание получается кошмаром для студентов и преподавателей?
+
+При составлении расписания вручную диспетчер удерживает в голове сотни ограничений и вынужден идти на компромиссы за счет удобства людей:
+
+#### 🎓 Для студентов:
+- **Бесконечные «окна» (пустые часы между парами)**:
+  Студенты могут отучиться 1-ю и 2-ю пару (до 12:40), затем получить «окно» на 3-й паре (1.5–2 часа безделья в коридорах), а потом идти на 4-ю и 5-ю пару. В итоге студент тратит на колледж весь день (с 09:00 до 18:20) ради 3–4 занятий.
+- **Разорванный график подгрупп**:
+  Первая подгруппа освобождается в 12:40, а вторая вынуждена ждать до 14:50 или сидеть до вечера из-за последовательного проведения лабораторных одним преподавателем.
+- **Хаотичная миграция между аудиториями**:
+  Каждую пару студенты с тяжелыми сумками вынуждены менять этажи или крылья здания, поскольку аудитории назначаются по принципу «где было свободно», без учета закрепления за группами.
+- **Неравномерное распределение нагрузки**:
+  Понедельник и вторник перегружены до предела (по 5 пар подряд), в четверг стоит всего 1–2 пары, а в субботу группа выдергивается ради одной пары в середине дня.
+
+#### 👨‍🏫 Для преподавателей:
+- **Разорванный рабочий день («висение в колледже»)**:
+  Преподавателю ставят 1-ю пару (09:00–10:40) и 5-ю пару (16:40–18:20), между которыми образуется 4–5 часов пустых окон. Фактически рабочий день длится более 9 часов, в то время как оплачиваются только проведенные часы.
+- **Потеря закрепленных кабинетов (Homerooms)**:
+  Преподаватель спецдисциплины или программирования, годами настраивавший программную среду и стенды в своей лаборатории, внезапно отправляется вести пары в общий лекционный класс, а в его лабораторию сажают непрофильный предмет.
+- **Логистический стресс и риск наложений**:
+  При ручном сведении высок риск ошибок: преподавателю могут случайно назначить утренние пары на Казинца, а дневные — на Кнорина, что превращает перемещение по городу в паническую гонку с опозданиями.
+- **Дневная перегрузка**:
+  В отдельные дни преподавателю ставят 5–6 пар подряд без перерыва на обед, что ведет к профессиональному выгоранию и снижению качества преподавания.
+
+---
+
+### 4. Как эту проблему решает математическая CP-SAT модель?
+
+Данный проект устраняет «человеческий фактор» и хаос с помощью точных дискретных методов Google OR-Tools CP-SAT:
+1. **Строго 0 окон у студентов**: гарантирует непрерывную цепочку занятий ($\sum_{s=0}^{4} \text{start}_{g, d, s} \le 1$).
+2. **Минимизация окон преподавателей**: целевая функция штрафует разорванные графики педагогов (штраф за `extra_starts`).
+3. **Строго 0 межкорпусных перемещений в день**: исключает перемещение педагогов между Казинца и Кнорина.
+4. **Интеллектуальная аллокация аудиторий**: приоритетное закрепление преподавателей за своими кабинетами (+100 / +30 очков) с гарантией `room_conflicts == 0`.
+5. **Математически обоснованные 5-е пары**: 5-е пары распределяются равномерно, компактно и только там, где этого строго требует пропускная способность лабораторий.
+
+---
+
+## Архитектура математической модели
+
+Задача составления расписания смоделирована как точная целочисленная задача дискретной оптимизации (Constraint Programming), решаемая солвером CP-SAT.
+
+### Жесткие ограничения (Hard Constraints — граница допустимости)
+
+1. **Соблюдение учебного плана**:
+   Каждая группа получает строго заданное количество пар в неделю согласно учебным планам РИПО.
+2. **Полное отсутствие «окон» у студентов**:
+   Для любой группы и каждой отдельной подгруппы в любой день все занятия образуют непрерывный блок времени:
+   $$\sum_{s=0}^{4} \text{start}_{g, k, d, s} \le 1, \quad \forall g, k, d$$
+3. **Дневные лимиты занятий**:
+   - 1 курс: $\le 4$ пар в день (Пн–Пт), со строгим стартом с 1-й пары (слот 0, 09:00).
+   - 2–4 курсы: $\le 4$ академических пар в день ($\le 5$ суммарно только в день проведения информационного часа). При учебе до 5-й пары (слот 4) занятия начинаются со 2-й пары (слот 1).
+   - Субботний лимит: $\le 3$ пар для всех курсов; 4-я и 5-я пары (слоты 3 и 4) запрещены.
+   - Преподаватели: не более 5 пар в день суммарно по всем курсам и корпусам.
+4. **Целостность занятий физической культурой (`ФЗКиЗ`)**:
+   Когда у группы $g$ назначена физкультура, она охватывает всю группу целиком. Не допускается ситуация, когда одна подгруппа занимается физкультурой, а другая — иным предметом:
    $$x_{i_{\text{pe}}, d, s} + x_{i_{\text{non}}, d, s} \le 1, \quad \forall d, s$$
-5. **Belarus Public Holidays Absolute Ban**:
-   Lessons are strictly prohibited across all groups on official non-working public holidays of the Republic of Belarus (Decree No. 157 & Labour Code Art. 147), including dynamically calculated floating holidays (Radunitsa via astronomical Meeus algorithm):
-   $$x_{i, d, s} = 0, \quad \forall d \in \text{Holidays}, s$$
-6. **Subgroup Synchronicity**:
-   When a curriculum entry requires subgroup division (e.g., Informatics and Foreign Language), both subgroup lessons are bound to identical `(day, slot)` tuples.
-7. **Teacher Uniqueness**:
-   A teacher cannot be assigned to more than one pair in any given time slot.
-8. **No Intra-Day Cross-Campus Travel**:
-   Teachers assigned to both Kazintsa and Knorina campuses are strictly prohibited from teaching at both campuses within the same calendar day.
-9. **Classroom Aggregate Pool Capacity**:
-   Concurrent lessons in pool $r$ at campus $c$ cannot exceed the pool's room count $C_{c, r}$.
+   Все подгруппы физкультуры синхронизируются в единый слот, и группа не может иметь более одного слота физкультуры в день.
+5. **Абсолютный запрет занятий в государственные праздники Беларуси**:
+   Занятия полностью запрещены в официальные нерабочие праздничные дни Республики Беларусь (Указ Президента № 157 и ст. 147 ТК РБ), включая плавающие праздники (Радуница по астрономическому алгоритму Меёса):
+   $$x_{i, d, s} = 0, \quad \forall d \in \text{Праздники}, s$$
+6. **Целостность контингента ОПФР**:
+   Для всех предметов групп ОПФР жестко зафиксировано отсутствие деления на подгруппы ($\text{subgroup} = 0$).
+7. **Уникальность преподавателя**:
+   Преподаватель физически не может вести более одного занятия в один временной слот:
+   $$\sum_{i \in \text{Items}(t)} x_{i, d, s} \le 1, \quad \forall t, d, s$$
+8. **Запрет межкорпусных перемещений преподавателей внутри дня**:
+   Преподаватель, читающий предметы на Казинца и Кнорина, не может преподавать на обоих корпусах в один и тот же календарный день:
+   $$\text{use\_kaz}_{t, d} + \text{use\_kno}_{t, d} \le 1, \quad \forall t, d$$
+9. **Вместимость физических пулов помещений**:
+   Суммарное число параллельных занятий в пуле $r$ на корпусе $c$ не может превышать физического числа аудиторий $C_{c, r}$. Исключены искусственные завышения емкости (`room_conflicts == 0`).
+10. **Размещение информационного часа строго в конце дня**:
+    Информационный час (`Инф час`) обязан завершать академический день группы; назначение регулярных занятий после информационного часа запрещено.
 
-### Soft Constraints and Objective Penalties
+### Мягкие ограничения и штрафы целевой функции
 
-The objective function minimizes total penalty points:
+Целевая функция минимизирует сумму штрафных баллов:
 
-| Constraint | Penalty Formulation | Weight | Technical Purpose |
+| Правило | Формула штрафа | Вес | Назначение |
 | :--- | :--- | :---: | :--- |
-| **Late Start Penalty** | $\text{start}_{g, d, s} \times 45 \times s$ for $s \ge 1$ | $45 \times s$ | Forces daily schedules to begin at slot 0 (08:00 / 09:00). |
-| **Late Slot Weight** | $\text{active}_{g, d, s} \times W_s$, where $W = [0, 2, 6, 18]$ | 2 to 18 | Prioritizes early release and compact schedules. |
-| **Saturday Relief** | Additional penalty on slot 1 ($+5$) and slot 2 ($+20$) | $+5 / +20$ | Minimizes Saturday academic load. |
-| **Duplicate Subject Cap** | $\max(0, \sum_s x_{i, d, s} - 1) \times 60$ | 60 | Prevents back-to-back double pairs unless necessary. |
-| **Lecture Precedence** | Lab placed on Day 0 when lecture exists | 10 | Ensures theoretical foundation precedes lab work. |
+| **Штраф за окна преподавателей** | $\text{extra\_starts}_{t, d} \times 1200$ | 1200 | Практически полностью исключает «висение» педагогов в колледже. |
+| **Ранний старт в субботу** | $(\text{day\_has\_les}_{g, 5} - \text{act}_{g, 5, 0}) \times 1500 + \text{start}_{g, 5, 1} \times 800$ | 800 / 1500 | Ориентирует субботние занятия на 1-ю пару и компактное завершение. |
+| **Вес поздних слотов** | $\text{active}_{g, d, s} \times W_s$, где $W = [0, 2, 6, 18, 40]$ | 2 до 40 | Отдает предпочтение утренним часам и раннему освобождению студентов. |
+| **Разгрузка субботы** | Дополнительный штраф за слот 2 ($+20$), слот 1 ($+5$); слоты 3 и 4 запрещены | 5 до 20 | Разгружает субботний учебный день. |
+| **Информационный час** | Слоты 0 и 1 штрафуются ($+1000$); дни кроме Чт/Пт штрафуются ($+200$) | 200 / 1000 | Размещает кураторские часы в конце дня, преимущественно в четверг/пятницу. |
+| **Лимит однородных предметов в день** | $\max(0, \sum_s x_{i, d, s} - 1) \times 60$ (исключение: ЛР, практика, КП) | 60 | Предотвращает дублирование лекций, разрешая блоки лабораторных и практики. |
+| **Синхронность подгрупп** | $\lvert x_{i1, d, s} - x_{i2, d, s} \rvert \times W_{\text{sync}}$ (кроме одного преподавателя) | 60 / 120 | Поощряет параллельные лаборатории, не штрафуя последовательные занятия одного педагога. |
+| **Лекция раньше практики** | Лабораторная на слоте 0 при наличии лекции | 10 | Гарантирует теоретическую базу до начала практических работ. |
 
-### Dynamic Rescheduling (Disruption Handling)
+### Динамическое перестроение расписания (Disruption Handling)
 
-When a teacher is placed on sick leave or classes are cancelled:
-- **Zero Autonomous Substitution**: Unassigned pairs are removed from the schedule rather than randomly assigned to unfamiliar staff.
-- **Frozen Period Preservation**: Completed days and immediate upcoming days remain strictly locked to baseline slots ($x_{i, d, s} = \text{baseline}_{i, d, s}$).
-- **Minimal Perturbation Principle**: Re-optimization applies high penalties for moving unaffected classes to different days (penalty 300) or slots (penalty 80), seeded by solver hints from the baseline schedule.
+При уходе преподавателя на больничный или отмене занятий:
+- **Никаких случайных автозамен**: пары заболевшего преподавателя временно снимаются, а не назначаются случайным некомпетентным педагогам.
+- **Фиксация пройденных и текущих дней (Frozen Days)**: прошедшие дни и ближайшие дни жестко блокируются от изменений ($x_{i, d, s} = \text{baseline}_{i, d, s}$).
+- **Принцип минимального возмущения (Minimal Perturbation)**: штраф 300 за перенос занятия на другой день, штраф 80 за сдвиг слота внутри дня; подсказки солвера (solver hints) инициализируются из базового расписания.
 
 ---
 
-## Repository Structure
+## Структура репозитория
 
 ```text
 mgkct-timetable-optimizer/
-├── .gitattributes             # Git normalization rules
-├── .gitignore                 # Files excluded from version control
-├── AGENTS.md                  # Comprehensive AI agents and solver guidelines
-├── LICENSE                    # MIT License
-├── README.md                  # Technical system documentation
-├── pyproject.toml             # Project configuration and packaging metadata (PEP 621)
-├── requirements.txt           # Python package dependencies
-├── run.py                     # Convenience top-level solver runner
-├── src/                       # Modular Python package
+├── .gitattributes             # Правила нормализации переносов строк Git
+├── .gitignore                 # Исключения версионного контроля
+├── AGENTS.md                  # Руководство по архитектуре и ограничениям для AI-агентов
+├── ANALYTICAL_REPORT.md       # Аналитический отчет и математические доказательства узких мест
+├── LICENSE                    # Лицензия MIT
+├── README.md                  # Документация системы (этот файл)
+├── pyproject.toml             # Метаданные пакета Python (PEP 621)
+├── requirements.txt           # Зависимости проекта (ortools)
+├── run.py                     # Скрипт быстрого запуска оптимизатора
+├── src/                       # Исходный код пакета Python
 │   └── mgkct_optimizer/
-│       ├── __init__.py        # Public package API exports
-│       ├── models.py          # Dataclasses (GroupInfo, RoomInfo, CurriculumItem, Lesson)
-│       ├── loader.py          # Curriculum data loader from data/mgkct_curriculum.json
-│       ├── holidays.py        # Belarus public holidays calendar (fixed + Meeus astronomical Radunitsa)
-│       ├── parser.py          # Live scraper for official MGKCT portal weekly timetables
-│       ├── solver.py          # Google OR-Tools CP-SAT discrete optimization core
-│       ├── allocator.py       # Two-stage classroom assignment heuristic
-│       ├── metrics.py         # Independent verification audit engine
-│       └── cli.py             # CLI parser and runner (`python -m mgkct_optimizer`)
-├── web/                       # Client web application
-│   └── index.html             # Interactive schedule visualizer and disruption simulator
-└── data/                      # (Local only, .gitignore) Curriculum and solved schedules
+│       ├── __init__.py        # Экспорт публичного API
+│       ├── models.py          # Модели данных (GroupInfo, RoomInfo, CurriculumItem, MAX_SLOTS=5)
+│       ├── loader.py          # Загрузчик учебного плана и метаданных групп
+│       ├── holidays.py        # Календарь государственных праздников Беларуси
+│       ├── parser.py          # Парсер данных с официального портала расписания МГКЦТ
+│       ├── solver.py          # Ядро оптимизации Google OR-Tools CP-SAT
+│       ├── allocator.py       # Двухэтапный взвешенный распределитель аудиторий (аллокатор)
+│       ├── metrics.py         # Модуль независимой верификации и аудита расписания
+│       └── cli.py             # Точка входа CLI (`python -m mgkct_optimizer`)
+├── web/                       # Веб-интерфейс визуализации
+│   └── index.html             # Интерактивный дашборд расписания и метрик
+└── data/                      # Учебные планы и экспортированные расписания
+    ├── mgkct_curriculum.json       # Нормативные требования учебного плана и фонд аудиторий
+    ├── mgkct_solved_schedule.json  # Оптимизированное базовое расписание
+    └── exported/                   # Исторические дампы базы данных SQLite и JSON
 ```
 
 ---
 
-## Installation & Requirements
+## Установка и системные требования
 
-### Prerequisites
-- Python 3.10 or higher
-- Modern web browser (to view `web/index.html`)
+### Требования
+- Python 3.10 или выше
+- Современный веб-браузер (для открытия `web/index.html`)
 
-### Setup
+### Пошаговая настройка
 
-1. Clone the repository:
+1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/Arsenii/mgkct-timetable-optimizer.git
    cd mgkct-timetable-optimizer
    ```
 
-2. Create and activate a virtual environment:
+2. Создайте и активируйте виртуальное окружение:
    ```bash
    # Linux / macOS
    python3 -m venv .venv
@@ -131,96 +238,97 @@ mgkct-timetable-optimizer/
    .venv\Scripts\Activate.ps1
    ```
 
-3. Install dependencies:
+3. Установите зависимости:
    ```bash
    pip install -r requirements.txt
-   # Or install as editable package
+   # Или установите пакет в режиме разработки
    pip install -e .
    ```
 
 ---
 
-## Usage
+## Инструкция по использованию
 
-### Live Curriculum Scraper
+### Запуск оптимизатора расписания
 
-To scrape real, live weekly schedule data from the official MGKCT portal:
-
-```bash
-# Scrape current week from the official portal
-python -m mgkct_optimizer.parser data/mgkct_curriculum.json
-
-# Or scrape and immediately optimize with the solver CLI
-python -m mgkct_optimizer --scrape --time-limit 25.0
-```
-
-### Run Optimization Solver
-
-To compute a baseline schedule and export the JSON solution:
+Для расчета оптимального базового расписания и его сохранения в JSON:
 
 ```bash
-# Using the top-level runner
+# Через скрипт быстрого запуска
 python run.py
 
-# Or via the Python module
+# Либо через модуль Python
 python -m mgkct_optimizer
 
-# Or via installed console script
+# Либо через установленную консольную команду
 mgkct-optimizer --time-limit 20.0
 ```
 
-Execution stages:
-1. Loads and validates curriculum data (`data/mgkct_curriculum.json`).
-2. Constructs the CP-SAT integer programming model with hard and soft constraints.
-3. Solves the CSP problem using parallel search workers.
-4. Performs secondary post-processing room assignment (teacher home room anchoring + greedy capacity fill).
-5. Executes an independent verification audit on 100% of constraints.
-6. Serializes the final timetable to `data/mgkct_solved_schedule.json`.
+Этапы выполнения:
+1. Загрузка и валидация учебного плана (`data/mgkct_curriculum.json`).
+2. Построение целочисленной модели CP-SAT с жесткими и мягкими ограничениями.
+3. Параллельный поиск решения оптимизатором OR-Tools.
+4. Вторичное взвешенное назначение физических аудиторий с учетом закрепленных кабинетов.
+5. Независимый аудит 100% полученного расписания по всем метрикам качества.
+6. Экспорт итогового расписания в `data/mgkct_solved_schedule.json`.
 
-### View Visual Schedule Dashboard
+### Сбор свежих данных с официального портала
 
-Open `web/index.html` in any modern web browser or run local server:
+Для загрузки актуальных данных учебного плана с официального сайта колледжа:
 
 ```bash
-# Start local HTTP server
-python -m http.server 8080 -d .
-# Open in browser: http://127.0.0.1:8080/web/
+# Сбор текущей недели с официального портала
+python -m mgkct_optimizer.parser data/mgkct_curriculum.json
+
+# Либо сбор и немедленная оптимизация через CLI
+python -m mgkct_optimizer --scrape --time-limit 25.0
 ```
 
-Features included in the web interface:
-- Campus and group filter dropdowns.
-- Bell schedule alignment per campus.
-- Subgroup indicators and classroom allocations.
-- Real-time solver metrics and audit indicators.
+### Просмотр расписания в веб-интерфейсе
+
+Откройте файл `web/index.html` в любом браузере или запустите локальный HTTP-сервер:
+
+```bash
+# Запуск локального сервера
+python -m http.server 8080 -d .
+# Откройте в браузере: http://127.0.0.1:8080/web/
+```
+
+Возможности визуального интерфейса:
+- Фильтрация по корпусам и учебным группам.
+- Отображение звонков с учетом специфики корпусов.
+- Индикация подгрупп и назначенных аудиторий.
+- Мониторинг метрик качества и верификационных индикаторов в реальном времени.
 
 ---
 
-## Verification Metrics
+## Метрики верификации качества
 
-The solver includes a self-auditing metric suite executed after every run:
+После каждого прогона генератор запускает независимый верификационный аудит:
 
-| Metric | Target | Description |
+| Метрика | Целевое значение | Описание |
 | :--- | :---: | :--- |
-| `student_windows` | **0** | Idle gaps between pairs for any group on any day |
-| `max_daily_violations` | **0** | Exceeding 3 pairs for Course 1 or 4 pairs for Courses 2–4 |
-| `cross_campus_violations` | **0** | Teacher scheduled at both Kazintsa and Knorina on the same day |
-| `pe_daily_slot_violations` | **0** | Multiple physical education slots on the same day for a group |
-| `pe_split_violations` | **0** | PE desynchronization or concurrent non-PE subject with PE |
-| `holiday_violations` | **0** | Lessons scheduled on official Republic of Belarus public holidays |
-| `subgroup_sync_violations` | **0** | Desynchronized split subgroups |
-| `first_pair_start_pct` | **$\ge$ 90.0%** | Percentage of group-days starting at pair 1 (slot 0) |
+| `student_windows` | **0** | Окна (пустые слоты) между парами у групп и подгрупп |
+| `max_daily_violations` | **0** | Превышение дневного лимита нагрузки (4 пары на 1 курсе, 4 на 2–4 курсах) |
+| `cross_campus_violations` | **0** | Поездки преподавателя между Казинца и Кнорина в течение одного дня |
+| `room_conflicts` | **0** | Наложения аудиторий (два урока в одном кабинете одновременно) |
+| `pe_daily_slot_violations` | **0** | Назначение физкультуры в несколько разных слотов в один день |
+| `pe_split_violations` | **0** | Рассинхронизация физкультуры или параллельные неспортивные пары |
+| `holiday_violations` | **0** | Проведение занятий в государственные праздники Республики Беларусь |
+| `subgroup_sync_violations` | **0** | Нарушения синхронизации разделенных подгрупп разных преподавателей |
+| `first_pair_start_pct` | **$\ge$ 90.0%** | Доля учебных дней, начинающихся строго с 1-й пары (слот 0) |
 
 ---
 
-## Institutional References
+## Официальные институциональные источники
 
-- MGKCT Official Portal: [mgkct.minskedu.gov.by](https://mgkct.minskedu.gov.by/)
-- Bell Schedule & Campus Distribution: [Announcements Document 70533](https://mgkct.minskedu.gov.by/about/announcements/document-70533.html)
-- Weekly Group & Teacher Timetables: [Weekly Timetable Portal](https://mgkct.minskedu.gov.by/personnel/for-students/weekly-timetable)
-- RIPO Educational Standards & Curriculum Plans: [ripo.unibel.by](http://ripo.unibel.by/index.php?id=1656)
+- Официальный портал МГКЦТ: [mgkct.minskedu.gov.by](https://mgkct.minskedu.gov.by/)
+- Расписание звонков и распределение корпусов: [Документ № 70533](https://mgkct.minskedu.gov.by/about/announcements/document-70533.html)
+- Еженедельные расписания групп и преподавателей: [Портал расписания МГКЦТ](https://mgkct.minskedu.gov.by/personnel/for-students/weekly-timetable)
+- Образовательные стандарты и учебные планы РИПО: [ripo.unibel.by](http://ripo.unibel.by/index.php?id=1656)
 
 ---
 
-## License
+## Лицензия
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+Проект распространяется под лицензией MIT. Подробности в файле [LICENSE](LICENSE).
